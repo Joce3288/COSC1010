@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://westernwyoming.instructure.com/courses/16663/assignments/360454 -->
+<html dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="apple-itunes-app" content="app-id=480883488">
+<link rel="manifest" href="https://westernwyoming.instructure.com/web-app-manifest/manifest.json">
+  <meta name="sentry-trace" content="e54ba408ffd045609d22d1c44826d677-ab3636e83e4c4f66-0">
+  <title>Your First Python Program</title>
+
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Regular-bd03a2cc27.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Bold-cccb897485.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Italic-4eb103b4d1.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-6ee09b0b2f.css" media="screen">
+  <link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/1b99f79075f0b8e2c7f79e23f5b05dd6/variables-7dd4b80918af0e0218ec0229e4bd5873.css" media="all">
+  <link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/common-3851139992.css" media="all">
+  <link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/assignments-adde4b105e.css" media="screen">
+  <link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/tinymce-5fc893f669.css" media="screen">
+  <link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/learning_outcomes-0ef38391dc.css" media="screen">
+  <link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/new_user_tutorials-6b15f87caf.css" media="screen">
+  <link rel="apple-touch-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/apple-touch-icon-585e5d997d.png">
+  <link rel="icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico">
+
+  <link rel="stylesheet" href="https://instructure-uploads.s3.amazonaws.com/account_116920000000000001/attachments/1487969/EKCSS.css" media="all">
+  
+  <script type="text/javascript" async="" src="https://cdn.heapanalytics.com/js/heap-3001039959.js"></script><script>if (navigator.userAgent.match(/(MSIE|Trident\/)/)) location.replace('/ie-is-not-supported.html')</script>
+  <script>
+    INST = {"environment":"production","allowMediaComments":true,"kalturaSettings":{"domain":"nv.instructuremedia.com","resource_domain":"nv.instructuremedia.com","rtmp_domain":"iad.rtmp.instructuremedia.com","partner_id":"9","subpartner_id":"0","player_ui_conf":"0","kcw_ui_conf":"0","upload_ui_conf":"0","max_file_size_bytes":534773760,"do_analytics":false,"hide_rte_button":false,"js_uploader":true},"logPageViews":true,"editorButtons":[{"name":"YouTube","id":2,"favorite":false,"url":"https://www.edu-apps.org/lti_public_resources/?tool_id=youtube","icon_url":"https://www.edu-apps.org/assets/lti_public_resources/youtube_icon.png","canvas_icon_class":null,"width":560,"height":600,"use_tray":false,"always_on":false,"description":"\u003cp\u003eSearch publicly available YouTube videos. A new icon will show up in your course rich editor letting you search YouTube and click to embed videos in your course material.\u003c/p\u003e\n"},{"name":"Quizlet","id":3,"favorite":false,"url":"https://www.edu-apps.org/lti_public_resources/?tool_id=quizlet","icon_url":"https://www.edu-apps.org/assets/lti_public_resources/quizlet_icon.png","canvas_icon_class":null,"width":560,"height":600,"use_tray":false,"always_on":false,"description":"\u003cp\u003eSearch for and embed publicly available flashcards and question sets from Quizlet. Questions can be embedded directly into content as flash cards, review, or as a study game.\u003c/p\u003e\n"},{"name":"Studio","id":266,"favorite":false,"url":"https://westernwyoming.instructuremedia.com/lti/launch?custom_arc_launch_type=content_select\u0026custom_lti_use_case=editor_button","icon_url":"https://files.instructuremedia.com/logos/studio-logo-squid-tiny-electric.svg","canvas_icon_class":null,"width":860,"height":640,"use_tray":false,"always_on":false,"description":"\u003cp\u003eVideo for Education\u003c/p\u003e\n"},{"name":"Commons Favorites","id":319,"favorite":false,"url":"https://lor.instructure.com/api/lti/favorite-resources","icon_url":"https://lor.instructure.com/img/icon_commons.png","canvas_icon_class":null,"width":800,"height":400,"use_tray":true,"always_on":false,"description":"\u003cp\u003eFind and share course content\u003c/p\u003e\n"},{"name":"Dropbox","id":1417,"favorite":false,"url":"https://www.edu-apps.org/tool_redirect?id=dropbox","icon_url":"https://daks2k3a4ib2z.cloudfront.net/5746d4c4a3e009bb4d9ac858/594d78d8dc2b583adddea4e3_favicons.png","canvas_icon_class":null,"width":400,"height":200,"use_tray":false,"always_on":false,"description":"\u003cp\u003eThis lightweight integration lets Dropbox users select and link to files within course content or in conjunction with homework submissions.\u003c/p\u003e\n\n\u003cp\u003eDropbox is a file hosting service offering cloud storage, file synchronization, and client software. Files placed in a Dropbox folder also are accessible through a website and mobile phone applications.\u003c/p\u003e\n\n\u003cp\u003e\u003ca href=\"https://googledrive.com/host/0B5ghu5Vrh0j7X3FCOERVQ1dLSms/dropbox.png\" target=\"_blank\"\u003e \u003cimg src=\"https://googledrive.com/host/0B5ghu5Vrh0j7X3FCOERVQ1dLSms/dropbox.png\" alt=\"Dropbox insert video demonstration image.\"\u003e \u003c/a\u003e\u003c/p\u003e\n\n\u003cp\u003eThe current integration does require that users login to Dropbox each time.\u003c/p\u003e\n"},{"name":"Google Apps","id":1457,"favorite":false,"url":"https://google-drive-lti-iad-prod.instructure.com/lti/rce-content-selection","icon_url":"https://google-drive-lti-iad-prod.instructure.com/icon.png","canvas_icon_class":null,"width":700,"height":600,"use_tray":false,"always_on":false,"description":"\u003cp\u003eAllows you to pull in documents from Google Drive to Canvas\u003c/p\u003e\n"},{"name":"Microsoft Office 365","id":1499,"favorite":false,"url":"https://office365-iad-prod.instructure.com/lti/rce-content-item","icon_url":"https://office365-iad-prod.instructure.com/images/office365_icon.png","canvas_icon_class":null,"width":900,"height":600,"use_tray":false,"always_on":false,"description":"\u003cp\u003eAllows you to pull in documents from Office 365 to Canvas\u003c/p\u003e\n"},{"name":"Films On Demand","id":1963,"favorite":true,"url":"https://lti.films.com/LtiSearch.aspx","icon_url":"http://fod.infobase.com/images/LTI_logo.png","canvas_icon_class":null,"width":920,"height":636,"use_tray":false,"always_on":false,"description":"\u003cp\u003eSearch available Films On Demand videos. A new icon will show up in your course rich editor letting you search Films On Demand and click to embed videos in your course material.\u003c/p\u003e\n"},{"name":"SoftChalk Link Selector","id":3275,"favorite":false,"url":"https://softchalkcloud.com/lti/content","icon_url":"https://softchalkcloud.com/images/resource-selector-01.png","canvas_icon_class":null,"width":800,"height":500,"use_tray":false,"always_on":false,"description":""},{"name":"Insert EquatIO Equation","id":7987,"favorite":true,"url":"https://equatio-lti.texthelp.com","icon_url":"https://m.equat.io/client/icon_16x16.png","canvas_icon_class":null,"width":800,"height":520,"use_tray":false,"always_on":false,"description":""},{"name":"Niche Academy","id":8902,"favorite":false,"url":"https://my.nicheacademy.com/api/launch-lti","icon_url":"https://my.nicheacademy.com/assets/images/favicon.png","canvas_icon_class":null,"width":600,"height":600,"use_tray":false,"always_on":false,"description":"\u003cp\u003eWe deliver immediately accessible online training. We do this with less overhead for learners, instructors, and administrators than you'll find with any other learning platform on the planet.\u003c/p\u003e\n"},{"name":"JoVE LTI Tool","id":8981,"favorite":false,"url":"https://lti.jove.com","icon_url":"https://www.jove.com/img/favicon.ico","canvas_icon_class":null,"width":800,"height":400,"use_tray":false,"always_on":false,"description":"\u003cp\u003eJoVE LTI Tool\u003c/p\u003e\n"},{"name":"Pearson Links","id":10278,"favorite":false,"url":"https://interop.pearson.com/launch","icon_url":"https://www.pearson.com/us/content/dam/one-dot-com/one-dot-com/us/en/images/PearsonThumbprint-RGB-127x138.png/_jcr_content/renditions/cq5dam.web.1600.9600.png","canvas_icon_class":null,"width":800,"height":400,"use_tray":false,"always_on":false,"description":"\u003cp\u003eAccess Pearson\u003c/p\u003e\n"},{"name":"Embed Lucid Document","id":11358,"favorite":false,"url":"https://integration.lucid.app/canvas/lti/launchTool","icon_url":"https://cdn-cashy-static-assets.lucidchart.com/lucid/logos/Lucid-L.svg","canvas_icon_class":null,"width":1200,"height":800,"use_tray":false,"always_on":true,"description":"\u003cp\u003eInsert Lucid documents in Canvas\u003c/p\u003e\n"}]};
+    ENV = {"ASSET_HOST":"https://du11hjcvx0uqb.cloudfront.net","active_brand_config_json_url":"https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/1b99f79075f0b8e2c7f79e23f5b05dd6/variables-7dd4b80918af0e0218ec0229e4bd5873.json","active_brand_config":{"md5":"1b99f79075f0b8e2c7f79e23f5b05dd6","variables":{"ic-brand-primary":"#98040c","ic-brand-font-color-dark":"#000000","ic-link-color":"#000000","ic-brand-button--primary-bgd":"#000000","ic-brand-button--secondary-bgd":"#808080","ic-brand-button--secondary-text":"#000000","ic-brand-global-nav-bgd":"#000000","ic-brand-global-nav-menu-item__text-color--active":"#98040c","ic-brand-global-nav-avatar-border":"#000000","ic-brand-global-nav-menu-item__badge-bgd":"#808080","ic-brand-global-nav-logo-bgd":"#ffffff","ic-brand-header-image":"https://instructure-uploads.s3.amazonaws.com/account_116920000000000001/attachments/1591767/Red%20W.JPG","ic-brand-watermark-opacity":"1","ic-brand-msapplication-tile-color":"#ba0c2f","ic-brand-Login-body-bgd-color":"#98040c","ic-brand-Login-body-bgd-shadow-color":"#98040c","ic-brand-Login-logo":"https://instructure-uploads.s3.amazonaws.com/account_116920000000000001/attachments/660917/wwcclogo_fqar6p.jpg","ic-brand-Login-Content-bgd-color":"#ffffff","ic-brand-Login-Content-border-color":"#000000","ic-brand-Login-Content-inner-bgd":"#ffffff","ic-brand-Login-Content-inner-border":"#000000","ic-brand-Login-Content-inner-body-bgd":"#000000","ic-brand-Login-Content-inner-body-border":"#000000","ic-brand-Login-Content-password-text-color":"#dddddd","ic-brand-Login-footer-link-color":"#808080","ic-brand-Login-footer-link-color-hover":"#808080","ic-brand-Login-instructure-logo":"#808080"},"share":false,"name":null,"created_at":"2024-02-12T10:14:19-07:00","js_overrides":"https://instructure-uploads.s3.amazonaws.com/account_116920000000000001/attachments/2435046/AfterEK.js","css_overrides":"https://instructure-uploads.s3.amazonaws.com/account_116920000000000001/attachments/1487969/EKCSS.css","mobile_js_overrides":"","mobile_css_overrides":"","parent_md5":null},"confetti_branding_enabled":false,"url_to_what_gets_loaded_inside_the_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/1b99f79075f0b8e2c7f79e23f5b05dd6/variables-7dd4b80918af0e0218ec0229e4bd5873.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-90e5ad1077.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-6ee09b0b2f.css"],"url_for_high_contrast_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-795277483f.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-6ee09b0b2f.css"],"current_user_id":"22619","current_user_global_id":"116920000000022619","current_user_heap_id":"uu-2-f36da764fe930dc35f0d7c09afdcb481970ec4f24fdf96be2254792222480102-nIVySFJB6fCVfOLrRH1cLfwJGAcamX6UCyuE8RHR","current_user_roles":["user","student"],"current_user_is_student":true,"current_user_types":[],"current_user_disabled_inbox":false,"current_user_visited_tabs":null,"discussions_reporting":true,"files_domain":"cluster6.canvas-user-content.com","group_information":null,"DOMAIN_ROOT_ACCOUNT_ID":"116920000000000001","DOMAIN_ROOT_ACCOUNT_UUID":"nIVySFJB6fCVfOLrRH1cLfwJGAcamX6UCyuE8RHR","k12":false,"help_link_name":"Help","help_link_icon":"help","use_high_contrast":false,"auto_show_cc":false,"disable_celebrations":false,"disable_keyboard_shortcuts":false,"LTI_LAUNCH_FRAME_ALLOWANCES":["geolocation *","microphone *","camera *","midi *","encrypted-media *","autoplay *","clipboard-write *","display-capture *"],"DEEP_LINKING_POST_MESSAGE_ORIGIN":"https://westernwyoming.instructure.com","comment_library_suggestions_enabled":false,"SETTINGS":{"open_registration":false,"collapse_global_nav":false,"release_notes_badge_disabled":false,"can_add_pronouns":true,"show_sections_in_course_tray":true,"filter_speed_grader_by_student_group":false},"RAILS_ENVIRONMENT":"Production","IN_PACED_COURSE":false,"SENTRY_FRONTEND":{"dsn":"https://355a1d96717e4038ac25aa852fa79a8f@relay-iad.sentry.insops.net/388","org_slug":"instructure","base_url":"https://sentry.insops.net","normalized_route":"/courses/{course_id}/assignments/{id}","errors_sample_rate":"0.005","traces_sample_rate":"0.005","url_deny_pattern":"instructure-uploads.*amazonaws.com","revision":"canvas-lms@20240828.234"},"DATA_COLLECTION_ENDPOINT":"https://canvas-frontend-data-iad-prod.inscloudgate.net/submit","DOMAIN_ROOT_ACCOUNT_SFID":"001A000000ZQQwsIAH","DIRECT_SHARE_ENABLED":false,"CAN_VIEW_CONTENT_SHARES":false,"FEATURES":{"featured_help_links":true,"account_level_blackout_dates":false,"render_both_to_do_lists":false,"commons_new_quizzes":false,"course_paces_redesign":true,"course_paces_for_students":true,"explicit_latex_typesetting":false,"media_links_use_attachment_id":true,"permanent_page_links":true,"selective_release_backend":true,"selective_release_ui_api":true,"selective_release_edit_page":true,"enhanced_course_creation_account_fetching":false,"instui_for_import_page":false,"multiselect_gradebook_filters":true,"assignment_edit_placement_not_on_announcements":false,"platform_service_speedgrader":false,"instui_header":false,"rce_find_replace":true,"courses_popout_sisid":true,"dashboard_graphql_integration":false,"discussion_checkpoints":false,"speedgrader_studio_media_capture":true,"product_tours":false,"usage_rights_discussion_topics":true,"granular_permissions_manage_users":true,"create_course_subaccount_picker":true,"file_verifiers_for_quiz_links":true,"lti_deep_linking_module_index_menu_modal":true,"lti_dynamic_registration":true,"lti_registrations_next":false,"lti_multiple_assignment_deep_linking":true,"lti_overwrite_user_url_input_select_content_dialog":true,"buttons_and_icons_root_account":true,"extended_submission_state":false,"scheduled_page_publication":true,"send_usage_metrics":true,"rce_transform_loaded_content":false,"mobile_offline_mode":false,"react_discussions_post":true,"instui_nav":false,"enhanced_developer_keys_tables":true,"lti_registrations_discover_page":false,"account_level_mastery_scales":false,"non_scoring_rubrics":true,"top_navigation_placement":false,"rubric_criterion_range":true,"lti_migration_info":true,"lti_toggle_placements":true,"embedded_release_notes":true,"canvas_k6_theme":false,"new_math_equation_handling":true},"current_user":{"id":"22619","anonymous_id":"hgb","display_name":"Jocelyn Wilson","avatar_image_url":"https://westernwyoming.instructure.com/images/messages/avatar-50.png","html_url":"https://westernwyoming.instructure.com/about/22619","pronouns":null,"avatar_is_fallback":true,"email":"jocelynwilson@westernwyoming.edu"},"current_user_is_admin":false,"page_view_update_url":"/page_views/69738d2d-ff69-4782-aa1c-c417fdbe7c21?page_view_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpIjoiNjk3MzhkMmQtZmY2OS00NzgyLWFhMWMtYzQxN2ZkYmU3YzIxIiwidSI6MTE2OTIwMDAwMDAwMDIyNjE5LCJjIjoiMjAyNC0wOC0yOVQyMTo0NDowNi45N1oifQ.ITJ8vds4_qYLuHfHKgTMmJWTfe1TkyaCw4V4qXQRj1c","context_asset_string":"course_16663","ping_url":"https://westernwyoming.instructure.com/api/v1/courses/16663/ping","TIMEZONE":"America/Denver","CONTEXT_TIMEZONE":"America/Denver","LOCALES":["en"],"BIGEASY_LOCALE":"en_US","FULLCALENDAR_LOCALE":"en","MOMENT_LOCALE":"en","rce_auto_save_max_age_ms":86400000,"K5_USER":false,"USE_CLASSIC_FONT":false,"K5_HOMEROOM_COURSE":false,"K5_SUBJECT_COURSE":false,"LOCALE_TRANSLATION_FILE":"/dist/javascripts/translations/en-67c25a6858.json","ACCOUNT_ID":"32","user_cache_key":"ZXhRZ0haVk5PMms4R2NFaG1EeWpTcDBhcHY4Q3pmMFJnbEdHMjNFbXZ5Zlc9\nO1twLTA/OntQXz1IVXBncmFxZTtuamFsa2hwdm9pdWxraW1tYXFld2c=\n","current_context":{"id":"16663","name":"24/FA COSC 1010 NT COMPUTATIONAL THINKING","type":"Course","url":"https://westernwyoming.instructure.com/courses/16663"},"ASSIGNMENT_POINTS_POSSIBLE":null,"media_comment_asset_string":"user_22619","COURSE_ID":"16663","ROOT_OUTCOME_GROUP":{"id":"10143","title":"24/FA COSC 1010 NT COMPUTATIONAL THINKING","vendor_guid":null,"url":"/api/v1/courses/16663/outcome_groups/10143","subgroups_url":"/api/v1/courses/16663/outcome_groups/10143/subgroups","outcomes_url":"/api/v1/courses/16663/outcome_groups/10143/outcomes","can_edit":false,"import_url":"/api/v1/courses/16663/outcome_groups/10143/import","context_id":"16663","context_type":"Course","description":null},"SUBMISSION_ID":"4808906","FIRST_ANNOTATION_SUBMISSION":false,"RICH_CONTENT_APP_HOST":"rich-content-iad.inscloudgate.net","JWT":"ZXlKaGJHY2lPaUprYVhJaUxDSmxibU1pT2lKQk1qVTJSME5OSWl3aWNtVm5hVzl1SWpvaWRYTXRaV0Z6ZEMweElpd2laVzUyYVhKdmJtMWxiblFpT2lKUWNtOWtkV04wYVc5dUluMC4uLTJVLVZqMDh4Z0pXQ3F2Zi5vS3NTSG84ck5FeDZBS0R3enNLbjNfdDFUYTJyMjgtUW9nODExMlBNVHdKTVpYOWY3S3FlNTcyTUhBd0RkRjVEMkxudFlyWHl4OExhMlNER3p3TEJFNHJaLUx3LUxLUURfRXRFZ2RqQnV1QUtEN0pma2Z0dmxDQzBESk1IbFM2YV9nSk40dDJuZWp1c010U1dUeXNPQUZkaV9ISmM2aWFFbUQ2Rkk0TkZ3emJkUy01S2RybGd3bk5yUEV3ck1ycnRKeENWZjY4TUlOSmF2c1RjWVlITk5WVnI5M2NGTjZWR1FYUGhMa29Vc3l6dDFPNkQ5WWtyamtnX21sRDNxb2t0d2tMV191V3oyWk9EYV9zaFlGMmZxbUdVNlExZC1OektLcnBxRXdkUmFjUHR0TUxYR19yTU9OQUFYWUFhMk9tQWpnY3l3TkptNG1yZVRabTJzZE9JdGdRVlNUWmtBazlPZTdZc2hncU5JNE1acGFxblpUVnpLSll1YmJqTDdEVmFvdGpfblZWNWFlZVZaTk9OVWFTeGk0cnJZVWEtaEs3Slk2NFJ0MG0zemFVWFdGYkt4MmczMnpNaGlIc0dxck1ieTdmODR1X0pTUEJRTy13VFVUdU1QRjhWeGpYN01RWTdIWVNCZTNkWFdsZXM5dDJOdWZyQU9Db1ZzV1lSeWJWdG00ZlJkYW5ZalBvdHVtZ1ZiTk0xbWhCNUFUbE01RTNSR251RFFkMnBHTUpGN1hISmRXcUtFd2pjNTRfZnRkNkpiaVlPaFRrLXZXbkJoWGM4YzZoenE4dGdTSV8wZjN3SEZHVmRjUFFoRWY4Rm1Dajdhd3oyTWNPM2FWQVZFbHpoUTd0cTFDeFdPRDM1N0ZFTDlobFJNcjBkOVRzdzFGOW4wQlBBY09HeTcwRHdRT1ZUMVJYMkJ4R2VQMXBuT0dGbGNWWjQtc0VxS2dFdEdmVWVBV28wRG03WDJUSEpBb1BXQWtCVXBlcDhUUXdScWtEU0w5WG0ycWw1VnhUOURrdDdBX2JoZWtVcXlQZm1qdVVTRlpDa1FSeWw5ZmNPVENnSTZNYzZ5WUJWQkg5YVhjb2NXS01QX2pfeWZoVWMuZFNpdHlxS0FzdjAwZHppVjRQYlJyQQ==","RICH_CONTENT_CAN_UPLOAD_FILES":false,"RICH_CONTENT_CAN_EDIT_FILES":false,"RICH_CONTENT_FILES_TAB_DISABLED":true,"RICH_CONTENT_INST_RECORD_TAB_DISABLED":false,"RICH_CONTENT_AI_TEXT_TOOLS":false,"ASSIGNMENT_ID":"360454","PREREQS":{},"EULA_URL":null,"EXTERNAL_TOOLS":[{"id":"5527","domain":"ck12.org","url":"https://www.ck12.org/auth/launch/lti/ltiApp","consumer_key":"Oorp9Xq1hJ4N2LamHIQmzr88rLYjUmwWja5J9fdrUmXubkCRR1","name":"CK-12","description":"CK-12 Foundation is a leading open educational resources (OER) non-profit organization dedicated to increasing access to high-quality K-12 STEM education materials. CK-12 offers free high-quality, standards-aligned, open content in the STEM subjects through an integrated set of tools for learning including digital textbooks, concept-based learning resources, simulations, interactive practice and more. All content is created and curated by teachers, for teachers and students.\n\nAll CK-12 products and services are 100% free and are being used by students and teachers across thousands of schools both in the US and rest of the world. ","created_at":"2019-12-16T16:12:32-07:00","updated_at":"2019-12-16T16:12:32-07:00","privacy_level":"public","custom_fields":{},"workflow_state":"public","vendor_help_link":null,"account_navigation":null,"assignment_edit":null,"assignment_group_menu":null,"assignment_index_menu":null,"assignment_menu":null,"assignment_selection":null,"assignment_view":null,"collaboration":null,"course_assignments_menu":null,"course_home_sub_navigation":null,"course_navigation":null,"course_settings_sub_navigation":null,"discussion_topic_index_menu":null,"discussion_topic_menu":null,"file_index_menu":null,"file_menu":null,"global_navigation":null,"homework_submission":{"enabled":"true","selection_height":600,"selection_width":800,"text":"CK-12 Practice","url":"https://www.ck12.org/auth/launch/lti/ltiApp","label":"CK-12 Practice"},"link_selection":null,"migration_selection":null,"module_group_menu":null,"module_index_menu":null,"module_index_menu_modal":null,"module_menu_modal":null,"module_menu":null,"post_grades":null,"quiz_index_menu":null,"quiz_menu":null,"resource_selection":{"enabled":"true","selection_height":600,"selection_width":800,"text":"CK-12 Practice","url":"https://www.ck12.org/auth/launch/lti/ltiApp","label":"CK-12 Practice"},"similarity_detection":null,"student_context_card":null,"submission_type_selection":null,"tool_configuration":null,"top_navigation":null,"user_navigation":null,"wiki_index_menu":null,"wiki_page_menu":null,"editor_button":null,"not_selectable":false,"version":"1.1","unified_tool_id":"204dd3a6-2010-4d3d-a5bf-1d0fa5392088","deployment_id":"5527:6fc9c72799db517fdbfd33a40255d597e79cd286"},{"id":"1417","domain":null,"url":"https://www.edu-apps.org/tool_redirect?id=dropbox","consumer_key":"N/A","name":"Dropbox","description":"This lightweight integration lets Dropbox users select and link to files within course content or in conjunction with homework submissions.\n\nDropbox is a file hosting service offering cloud storage, file synchronization, and client software. Files placed in a Dropbox folder also are accessible through a website and mobile phone applications.\n\n[ ![Dropbox insert video demonstration image.](https://googledrive.com/host/0B5ghu5Vrh0j7X3FCOERVQ1dLSms/dropbox.png) ](https://googledrive.com/host/0B5ghu5Vrh0j7X3FCOERVQ1dLSms/dropbox.png)\n\nThe current integration does require that users login to Dropbox each time.","created_at":"2018-01-17T16:43:22-07:00","updated_at":"2020-03-02T15:40:46-07:00","privacy_level":"anonymous","custom_fields":{},"workflow_state":"anonymous","vendor_help_link":null,"account_navigation":null,"assignment_edit":null,"assignment_group_menu":null,"assignment_index_menu":null,"assignment_menu":null,"assignment_selection":null,"assignment_view":null,"collaboration":null,"course_assignments_menu":null,"course_home_sub_navigation":null,"course_navigation":null,"course_settings_sub_navigation":null,"discussion_topic_index_menu":null,"discussion_topic_menu":null,"file_index_menu":null,"file_menu":null,"global_navigation":null,"homework_submission":{"enabled":"true","label":"Dropbox","selection_width":400,"selection_height":200,"icon_url":"https://daks2k3a4ib2z.cloudfront.net/5746d4c4a3e009bb4d9ac858/594d78d8dc2b583adddea4e3_favicons.png"},"link_selection":null,"migration_selection":null,"module_group_menu":null,"module_index_menu":null,"module_index_menu_modal":null,"module_menu_modal":null,"module_menu":null,"post_grades":null,"quiz_index_menu":null,"quiz_menu":null,"resource_selection":null,"similarity_detection":null,"student_context_card":null,"submission_type_selection":null,"tool_configuration":null,"top_navigation":null,"user_navigation":null,"wiki_index_menu":null,"wiki_page_menu":null,"editor_button":{"enabled":"true","label":"Dropbox","selection_width":400,"selection_height":200,"icon_url":"https://daks2k3a4ib2z.cloudfront.net/5746d4c4a3e009bb4d9ac858/594d78d8dc2b583adddea4e3_favicons.png"},"is_rce_favorite":false,"selection_width":400,"selection_height":200,"icon_url":"https://daks2k3a4ib2z.cloudfront.net/5746d4c4a3e009bb4d9ac858/594d78d8dc2b583adddea4e3_favicons.png","not_selectable":false,"version":"1.1","unified_tool_id":"e4fd5b4b-3f4b-4064-9b64-c7c1f7927743","deployment_id":"1417:6fc9c72799db517fdbfd33a40255d597e79cd286"},{"id":"1457","domain":"google-drive-lti-iad-prod.instructure.com","url":"https://google-drive-lti-iad-prod.instructure.com/lti/course-navigation","consumer_key":"1f16f27d-1484-4959-b71a-e69f3bb11c4e","name":"Google Apps","description":"Allows you to pull in documents from Google Drive to Canvas","created_at":"2018-02-05T12:40:07-07:00","updated_at":"2021-10-28T00:28:55-06:00","privacy_level":"name_only","custom_fields":{"account_id":"$Canvas.account.id","assignment_title":"$Canvas.assignment.title","base_url":"$Canvas.api.baseUrl","collaboration_members_url":"$Canvas.api.collaborationMembers.url","domain":"$Canvas.api.domain","group_context_ids":"$Canvas.group.contextIds","masquerading_user_id":"$Canvas.masqueradingUser.userId","membership_service_url":"$ToolProxyBinding.memberships.url","previous_context_ids":"$Canvas.course.previousContextIds","previous_context_ids_recursive":"$Canvas.course.previousContextIds.recursive","time_zone":"$Person.address.timezone","user_id":"$Canvas.user.id"},"workflow_state":"name_only","vendor_help_link":null,"account_navigation":null,"assignment_edit":null,"assignment_group_menu":null,"assignment_index_menu":null,"assignment_menu":null,"assignment_selection":{"enabled":true,"message_type":"ContentItemSelectionRequest","text":"Google Docs Cloud Assignment","url":"https://google-drive-lti-iad-prod.instructure.com/lti/cloud-template-selection","label":"Google Docs Cloud Assignment","selection_width":800,"selection_height":400,"icon_url":"https://google-drive-lti-iad-prod.instructure.com/icon.png"},"assignment_view":null,"collaboration":{"enabled":true,"canvas_icon_class":"icon-lti","icon_url":"https://google-drive-lti-iad-prod.instructure.com/icon.png","message_type":"ContentItemSelectionRequest","text":"Google Drive","url":"https://google-drive-lti-iad-prod.instructure.com/lti/collaboration-content-selection","label":"Google Drive","selection_width":800,"selection_height":400},"course_assignments_menu":null,"course_home_sub_navigation":null,"course_navigation":{"enabled":true,"text":"Google Drive","url":"https://google-drive-lti-iad-prod.instructure.com/lti/course-navigation","label":"Google Drive","selection_width":800,"selection_height":400,"icon_url":"https://google-drive-lti-iad-prod.instructure.com/icon.png"},"course_settings_sub_navigation":null,"discussion_topic_index_menu":null,"discussion_topic_menu":null,"file_index_menu":null,"file_menu":null,"global_navigation":null,"homework_submission":{"enabled":true,"canvas_icon_class":"icon-lti","icon_url":"https://google-drive-lti-iad-prod.instructure.com/icon.png","message_type":"ContentItemSelectionRequest","text":"Google Drive","url":"https://google-drive-lti-iad-prod.instructure.com/lti/homework-content-selection","label":"Google Drive","selection_width":800,"selection_height":400},"link_selection":{"enabled":"true","message_type":"ContentItemSelectionRequest","selection_height":600,"selection_width":700,"text":"Google Drive","url":"https://google-drive-lti-iad-prod.instructure.com/lti/module-content-selection","label":"Google Drive","icon_url":"https://google-drive-lti-iad-prod.instructure.com/icon.png"},"migration_selection":null,"module_group_menu":null,"module_index_menu":null,"module_index_menu_modal":null,"module_menu_modal":null,"module_menu":null,"post_grades":null,"quiz_index_menu":null,"quiz_menu":null,"resource_selection":null,"similarity_detection":null,"student_context_card":null,"submission_type_selection":null,"tool_configuration":null,"top_navigation":null,"user_navigation":null,"wiki_index_menu":null,"wiki_page_menu":null,"editor_button":{"enabled":true,"icon_url":"https://google-drive-lti-iad-prod.instructure.com/icon.png","message_type":"ContentItemSelectionRequest","selection_height":600,"selection_width":700,"url":"https://google-drive-lti-iad-prod.instructure.com/lti/rce-content-selection","label":"Google Apps"},"is_rce_favorite":false,"icon_url":"https://google-drive-lti-iad-prod.instructure.com/icon.png","not_selectable":false,"version":"1.1","unified_tool_id":"36a41d47-a87f-4036-afb8-bcef0631bad8","deployment_id":"1457:6fc9c72799db517fdbfd33a40255d597e79cd286"},{"id":"8981","domain":"https://lti.jove.com","url":"https://lti.jove.com","consumer_key":"fake","name":"JoVE LTI Tool","description":"JoVE LTI Tool","created_at":"2022-07-13T09:30:22-06:00","updated_at":"2022-09-14T15:54:04-06:00","privacy_level":"public","custom_fields":{"lis_person_contact_email_primary":"$Person.email.primary"},"workflow_state":"public","vendor_help_link":null,"account_navigation":null,"assignment_edit":null,"assignment_group_menu":null,"assignment_index_menu":null,"assignment_menu":null,"assignment_selection":{"enabled":true,"placement":"assignment_selection","message_type":"LtiDeepLinkingRequest","target_link_uri":"https://lti.jove.com/lti/select","label":"JoVE LTI Tool","selection_width":800,"selection_height":400,"icon_url":"https://www.jove.com/img/favicon.ico"},"assignment_view":null,"collaboration":null,"course_assignments_menu":null,"course_home_sub_navigation":null,"course_navigation":null,"course_settings_sub_navigation":null,"discussion_topic_index_menu":null,"discussion_topic_menu":null,"file_index_menu":null,"file_menu":null,"global_navigation":null,"homework_submission":{"enabled":true,"placement":"homework_submission","message_type":"LtiDeepLinkingRequest","target_link_uri":"https://lti.jove.com/lti/select","label":"JoVE LTI Tool","selection_width":800,"selection_height":400,"icon_url":"https://www.jove.com/img/favicon.ico"},"link_selection":{"enabled":true,"placement":"link_selection","message_type":"LtiDeepLinkingRequest","target_link_uri":"https://lti.jove.com/lti/select","label":"JoVE LTI Tool","selection_width":800,"selection_height":400,"icon_url":"https://www.jove.com/img/favicon.ico"},"migration_selection":null,"module_group_menu":null,"module_index_menu":null,"module_index_menu_modal":null,"module_menu_modal":null,"module_menu":null,"post_grades":null,"quiz_index_menu":null,"quiz_menu":null,"resource_selection":null,"similarity_detection":null,"student_context_card":null,"submission_type_selection":null,"tool_configuration":null,"top_navigation":null,"user_navigation":null,"wiki_index_menu":null,"wiki_page_menu":null,"editor_button":{"enabled":true,"placement":"editor_button","message_type":"LtiDeepLinkingRequest","target_link_uri":"https://lti.jove.com/lti/select","label":"JoVE LTI Tool","selection_width":800,"selection_height":400,"icon_url":"https://www.jove.com/img/favicon.ico"},"is_rce_favorite":false,"icon_url":"https://www.jove.com/img/favicon.ico","not_selectable":false,"version":"1.3","unified_tool_id":"dd2b6cd6-9a06-4885-a1c1-e5e3b1e39839","developer_key_id":"107","deployment_id":"8981:6fc9c72799db517fdbfd33a40255d597e79cd286"},{"id":"1499","domain":"office365-iad-prod.instructure.com","url":"https://office365-iad-prod.instructure.com/lti/course-navigation","consumer_key":"477ad60d-aa29-4a06-8bb6-f36a6191aff8","name":"Microsoft Office 365","description":"Allows you to pull in documents from Office 365 to Canvas","created_at":"2018-02-28T11:54:05-07:00","updated_at":"2018-03-20T15:55:52-06:00","privacy_level":"name_only","custom_fields":{"account_id":"$Canvas.account.id","assignment_title":"$Canvas.assignment.title","base_url":"$Canvas.api.baseUrl","collaboration_members_url":"$Canvas.api.collaborationMembers.url","course_id":"$Canvas.course.id","domain":"$Canvas.api.domain","group_context_ids":"$Canvas.group.contextIds","masquerading_user_id":"$Canvas.masqueradingUser.userId","membership_service_url":"$ToolProxyBinding.memberships.url","time_zone":"$Person.address.timezone","user_id":"$Canvas.user.id","previous_context_ids":"$Canvas.course.previousContextIds","previous_context_ids_recursive":"$Canvas.course.previousContextIds.recursive"},"workflow_state":"name_only","vendor_help_link":null,"account_navigation":null,"assignment_edit":null,"assignment_group_menu":null,"assignment_index_menu":null,"assignment_menu":null,"assignment_selection":{"enabled":true,"message_type":"ContentItemSelectionRequest","text":"Office 365 Cloud Assignment","url":"https://office365-iad-prod.instructure.com/lti/cloud-assignment-template","label":"Office 365 Cloud Assignment","selection_width":800,"selection_height":400,"icon_url":"https://office365-iad-prod.instructure.com/images/office365_icon.png"},"assignment_view":null,"collaboration":{"enabled":true,"canvas_icon_class":"icon-lti","icon_url":"https://office365-iad-prod.instructure.com/images/office365_icon.png","message_type":"ContentItemSelectionRequest","text":"Office 365","url":"https://office365-iad-prod.instructure.com/lti/collaboration-content-item","label":"Office 365","selection_width":800,"selection_height":400},"course_assignments_menu":null,"course_home_sub_navigation":null,"course_navigation":{"enabled":true,"text":"Office 365","url":"https://office365-iad-prod.instructure.com/lti/course-navigation","label":"Office 365","selection_width":800,"selection_height":400,"icon_url":"https://office365-iad-prod.instructure.com/images/office365_icon.png"},"course_settings_sub_navigation":null,"discussion_topic_index_menu":null,"discussion_topic_menu":null,"file_index_menu":null,"file_menu":null,"global_navigation":null,"homework_submission":{"enabled":true,"canvas_icon_class":"icon-lti","icon_url":"https://office365-iad-prod.instructure.com/images/office365_icon.png","message_type":"ContentItemSelectionRequest","text":"Office 365","url":"https://office365-iad-prod.instructure.com/lti/homework-submission-content-item","label":"Office 365","selection_width":800,"selection_height":400},"link_selection":{"enabled":"true","message_type":"ContentItemSelectionRequest","selection_height":600,"selection_width":900,"text":"Office 365","url":"https://office365-iad-prod.instructure.com/lti/module-content-item","label":"Office 365","icon_url":"https://office365-iad-prod.instructure.com/images/office365_icon.png"},"migration_selection":null,"module_group_menu":null,"module_index_menu":null,"module_index_menu_modal":null,"module_menu_modal":null,"module_menu":null,"post_grades":null,"quiz_index_menu":null,"quiz_menu":null,"resource_selection":null,"similarity_detection":null,"student_context_card":null,"submission_type_selection":null,"tool_configuration":null,"top_navigation":null,"user_navigation":null,"wiki_index_menu":null,"wiki_page_menu":null,"editor_button":{"enabled":true,"icon_url":"https://office365-iad-prod.instructure.com/images/office365_icon.png","message_type":"ContentItemSelectionRequest","selection_height":600,"selection_width":900,"url":"https://office365-iad-prod.instructure.com/lti/rce-content-item","label":"Microsoft Office 365"},"is_rce_favorite":false,"icon_url":"https://office365-iad-prod.instructure.com/images/office365_icon.png","not_selectable":false,"version":"1.1","unified_tool_id":null,"deployment_id":"1499:6fc9c72799db517fdbfd33a40255d597e79cd286"},{"id":"8902","domain":"my.nicheacademy.com","url":"https://my.nicheacademy.com/api/launch-lti","consumer_key":"0ecd9a76-7267-4b8e-ab0b-6dedfc867615","name":"Niche Academy","description":"We deliver immediately accessible online training. We do this with less overhead for learners, instructors, and administrators than you'll find with any other learning platform on the planet.","created_at":"2022-04-25T15:50:26-06:00","updated_at":"2022-04-25T15:50:26-06:00","privacy_level":"public","custom_fields":{},"workflow_state":"public","vendor_help_link":null,"account_navigation":null,"assignment_edit":null,"assignment_group_menu":null,"assignment_index_menu":null,"assignment_menu":null,"assignment_selection":null,"assignment_view":null,"collaboration":null,"course_assignments_menu":null,"course_home_sub_navigation":null,"course_navigation":null,"course_settings_sub_navigation":null,"discussion_topic_index_menu":null,"discussion_topic_menu":null,"file_index_menu":null,"file_menu":null,"global_navigation":null,"homework_submission":{"enabled":true,"label":"Niche Academy","selection_width":990,"selection_height":600,"icon_url":"https://my.nicheacademy.com/assets/images/favicon.png"},"link_selection":null,"migration_selection":null,"module_group_menu":null,"module_index_menu":null,"module_index_menu_modal":null,"module_menu_modal":null,"module_menu":null,"post_grades":null,"quiz_index_menu":null,"quiz_menu":null,"resource_selection":{"enabled":true,"icon_url":"https://my.nicheacademy.com/assets/images/favicon.png","selection_height":600,"selection_width":600,"text":"Niche Academy","url":"https://my.nicheacademy.com/api/launch-lti","label":"Niche Academy"},"similarity_detection":null,"student_context_card":null,"submission_type_selection":null,"tool_configuration":null,"top_navigation":null,"user_navigation":null,"wiki_index_menu":null,"wiki_page_menu":null,"editor_button":{"enabled":true,"icon_url":"https://my.nicheacademy.com/assets/images/favicon.png","selection_height":600,"selection_width":600,"text":"Niche Academy","url":"https://my.nicheacademy.com/api/launch-lti","label":"Niche Academy"},"is_rce_favorite":false,"selection_width":990,"selection_height":600,"icon_url":"https://my.nicheacademy.com/assets/images/favicon.png","not_selectable":false,"version":"1.1","unified_tool_id":"255037e1-a361-49f4-823f-cd945221ac10","deployment_id":"8902:6fc9c72799db517fdbfd33a40255d597e79cd286"},{"id":"266","domain":"arc.instructure.com","url":"https://westernwyoming.instructuremedia.com/lti/launch","consumer_key":"1579-c68b161f7c09e545f94a1e3eadac5b84484e8e6d5ef108f86937fcd5a8ac5760","name":"Studio","description":"Video for Education","created_at":"2017-10-23T15:12:06-06:00","updated_at":"2024-08-21T10:22:25-06:00","privacy_level":"name_only","custom_fields":{"avatar":"$User.image","course_id":"$Canvas.course.id","email":"$Person.email.primary","high_contrast":"$Canvas.user.prefersHighContrast","login_id":"$Canvas.user.loginId","name":"$Person.name.full","manage_account_settings":"$Canvas.membership.permissions\u003cmanage_account_settings\u003e","is_root_account_admin":"$Canvas.user.isRootAccountAdmin","usage_metrics_enabled":"$com.instructure.Account.usage_metrics_enabled","canvas_user_uuid":"$vnd.instructure.User.uuid","root_account_id":"$vnd.Canvas.root_account.uuid","course_uuid":"$vnd.instructure.Course.uuid","course_sis_id":"$Canvas.course.sisSourceId","course_status":"$Canvas.course.workflowState","subaccount_id":"$Canvas.account.id","course_start_at":"$Canvas.course.startAt","course_end_at":"$Canvas.course.endAt","canvas_domain":"$Canvas.api.domain","term_name":"$Canvas.term.name","user_adminable_accounts":"$Canvas.user.adminableAccounts","resource_type":"$com.instructure.Course.canvas_resource_type","resource_id":"$com.instructure.Course.canvas_resource_id","external_tool_global_id":"$Canvas.externalTool.global_id","canvas_shard_id":"$Canvas.shard.id"},"workflow_state":"name_only","vendor_help_link":null,"account_navigation":null,"assignment_edit":null,"assignment_group_menu":null,"assignment_index_menu":null,"assignment_menu":null,"assignment_selection":null,"assignment_view":null,"collaboration":null,"course_assignments_menu":null,"course_home_sub_navigation":null,"course_navigation":{"enabled":true,"text":"Studio","url":"https://westernwyoming.instructuremedia.com/lti/launch?custom_arc_launch_type=course_nav\u0026custom_lti_use_case=course_navigation","visibility":"admins","selection_height":640,"selection_width":860,"display_type":"full_width_in_context","label":"Studio"},"course_settings_sub_navigation":null,"discussion_topic_index_menu":null,"discussion_topic_menu":null,"file_index_menu":null,"file_menu":null,"global_navigation":{"enabled":true,"display_type":"full_width","icon_svg_path_64":"M37.5331419,41.3325083 L25.3997411,41.3325083 L25.3997411,52.8756632 C27.5972597,53.6451225 29.1733531,55.7378472 29.1733531,58.198822 C29.1733531,61.3127847 26.6499049,63.8371501 23.5370738,63.8371501 C20.4242427,63.8371501 17.9007945,61.3127847 17.9007945,58.198822 C17.9007945,55.7378472 19.4768879,53.6451225 21.6744065,52.8756632 L21.6744065,41.3325083 L17.5706263,41.3325083 L17.5717453,47.9192726 C17.5717453,50.4825483 15.4945548,52.5604939 12.9322104,52.5604939 L10.9667199,52.5588751 C10.2051449,54.7710384 8.10625368,56.3604121 5.63627929,56.3604121 C2.52344819,56.3604121 2.84217094e-14,53.8360466 2.84217094e-14,50.722084 C2.84217094e-14,47.6081214 2.52344819,45.0837559 5.63627929,45.0837559 C8.08603407,45.0837559 10.1707563,46.6472143 10.9477485,48.8310912 L12.9905507,48.8310912 C13.4625615,48.8310912 13.8452018,48.4483118 13.8452018,47.9761294 L13.8452018,41.3325083 L5.65400042,41.3325083 C4.57511859,41.3325083 3.70051205,40.4575839 3.70051205,39.3783099 L3.70051205,1.95419847 C3.70051205,0.874924458 4.57511859,-1.42108547e-14 5.65400042,-1.42108547e-14 L57.2376164,-1.42108547e-14 C58.3164983,-1.42108547e-14 59.1911048,0.874924458 59.1911048,1.95419847 L59.1911048,39.3783099 C59.1911048,40.4575839 58.3164983,41.3325083 57.2376164,41.3325083 L49.085452,41.3325083 L49.085452,47.9761294 C49.085452,48.4483118 49.4680923,48.8310912 49.9401031,48.8310912 L51.9829054,48.8310912 C52.7598976,46.6472143 54.8446197,45.0837559 57.2943745,45.0837559 C60.4072056,45.0837559 62.9306538,47.6081214 62.9306538,50.722084 C62.9306538,53.8360466 60.4072056,56.3604121 57.2943745,56.3604121 C54.8244001,56.3604121 52.725509,54.7710384 51.9639339,52.5588751 L49.9996524,52.5604938 C47.436099,52.5604939 45.3589085,50.4825483 45.3589085,47.9192726 L45.3600275,41.3325083 L41.2584765,41.3325083 L41.2584765,52.8756632 C43.4559951,53.6451225 45.0320885,55.7378472 45.0320885,58.198822 C45.0320885,61.3127847 42.5086403,63.8371501 39.3958092,63.8371501 C36.2829781,63.8371501 33.7595299,61.3127847 33.7595299,58.198822 C33.7595299,55.7378472 35.3356233,53.6451225 37.5331419,52.8756632 L37.5331419,41.3325083 Z M39.4407163,60.0484002 C40.4618389,60.0484002 41.2896223,59.2203158 41.2896223,58.198822 C41.2896223,57.1773282 40.4618389,56.3492439 39.4407163,56.3492439 C38.4195937,56.3492439 37.5918102,57.1773282 37.5918102,58.198822 C37.5918102,59.2203158 38.4195937,60.0484002 39.4407163,60.0484002 Z M23.5819809,60.0484002 C24.6031035,60.0484002 25.4308869,59.2203158 25.4308869,58.198822 C25.4308869,57.1773282 24.6031035,56.3492439 23.5819809,56.3492439 C22.5608582,56.3492439 21.7330748,57.1773282 21.7330748,58.198822 C21.7330748,59.2203158 22.5608582,60.0484002 23.5819809,60.0484002 Z M57.3392816,52.5716621 C58.3604042,52.5716621 59.1881877,51.7435778 59.1881877,50.722084 C59.1881877,49.7005902 58.3604042,48.8725058 57.3392816,48.8725058 C56.318159,48.8725058 55.4903755,49.7005902 55.4903755,50.722084 C55.4903755,51.7435778 56.318159,52.5716621 57.3392816,52.5716621 Z M5.59137222,52.5716621 C6.61249484,52.5716621 7.44027829,51.7435778 7.44027829,50.722084 C7.44027829,49.7005902 6.61249484,48.8725058 5.59137222,48.8725058 C4.57024959,48.8725058 3.74246615,49.7005902 3.74246615,50.722084 C3.74246615,51.7435778 4.57024959,52.5716621 5.59137222,52.5716621 Z M30.1554353,12.9293586 L35.7525093,16.2831044 C36.070684,16.5163802 36.2591714,16.8906762 36.2591714,17.2892282 C36.2591714,17.6877801 36.070684,18.0620761 35.7525093,18.2953519 L30.1554353,21.6490977 C29.7776345,21.8706324 29.3121961,21.8707698 28.9342686,21.6494581 C28.5563411,21.4281465 28.3232712,21.0189676 28.3227651,20.575899 L28.3227651,14.0025573 C28.3232712,13.5594887 28.5563411,13.1503099 28.9342686,12.9289982 C29.3121961,12.7076865 29.7776345,12.7078239 30.1554353,12.9293586 Z M55.6445081,31.031948 L55.6445081,4.52360758 C55.6445081,3.98397057 55.2072048,3.54650834 54.6677639,3.54650834 L8.22385298,3.54650834 C7.68441206,3.54650834 7.24710879,3.98397057 7.24710879,4.52360758 L7.24710879,31.031948 L55.6445081,31.031948 Z M55.6445081,34.5784563 L7.24710879,34.5784563 L7.24710879,36.8093831 C7.24710879,37.3490201 7.68441206,37.7864824 8.22385298,37.7864824 L54.6677639,37.7864824 C55.2072048,37.7864824 55.6445081,37.3490201 55.6445081,36.8093831 L55.6445081,34.5784563 Z","text":"Studio","url":"https://westernwyoming.instructuremedia.com/lti/launch?custom_arc_launch_type=global_nav\u0026custom_lti_use_case=global_navigation","visibility":"members","selection_height":640,"selection_width":860,"label":"Studio"},"homework_submission":{"enabled":true,"message_type":"ContentItemSelectionRequest","text":"Studio","url":"https://westernwyoming.instructuremedia.com/lti/launch?custom_arc_launch_type=content_select\u0026custom_lti_use_case=homework_submission","selection_height":640,"selection_width":860,"label":"Studio"},"link_selection":null,"migration_selection":null,"module_group_menu":null,"module_index_menu":null,"module_index_menu_modal":null,"module_menu_modal":null,"module_menu":null,"post_grades":null,"quiz_index_menu":null,"quiz_menu":null,"resource_selection":{"enabled":true,"message_type":"ContentItemSelectionRequest","title":"Studio","url":"https://westernwyoming.instructuremedia.com/lti/launch?custom_arc_launch_type=content_select\u0026custom_lti_use_case=resource_selection","selection_height":640,"selection_width":860,"label":"Studio"},"similarity_detection":null,"student_context_card":null,"submission_type_selection":null,"tool_configuration":null,"top_navigation":null,"user_navigation":null,"wiki_index_menu":null,"wiki_page_menu":null,"editor_button":{"enabled":true,"icon_url":"https://files.instructuremedia.com/logos/studio-logo-squid-tiny-electric.svg","message_type":"ContentItemSelectionRequest","url":"https://westernwyoming.instructuremedia.com/lti/launch?custom_arc_launch_type=content_select\u0026custom_lti_use_case=editor_button","selection_height":640,"selection_width":860,"label":"Studio"},"is_rce_favorite":false,"selection_width":860,"selection_height":640,"not_selectable":false,"version":"1.1","unified_tool_id":"cc24335f-4170-43ed-bc85-045f7d91022b","deployment_id":"266:6fc9c72799db517fdbfd33a40255d597e79cd286"}],"PERMISSIONS":{"context":{"read_as_admin":false,"manage_assignments":false,"manage_assignments_edit":false},"assignment":{"update":false,"submit":true},"can_manage_groups":true},"SIMILARITY_PLEDGE":null,"CONFETTI_ENABLED":true,"EMOJIS_ENABLED":false,"EMOJI_DENY_LIST":null,"USER_ASSET_STRING":"user_22619","OUTCOMES_NEW_DECAYING_AVERAGE_CALCULATION":true,"CONDITIONAL_RELEASE_SERVICE_ENABLED":true,"CONDITIONAL_RELEASE_ENV":{"assignment":{"id":"360454","title":"Your First Python Program","description":"\u003cp\u003e\u003cimg id=\"2501056\" src=\"/courses/16663/files/2515231/preview\" alt=\"Module 2 Assignment banner\" data-ally-user-updated-alt=\"Module 2 Assignment banner\" data-api-endpoint=\"https://westernwyoming.instructure.com/api/v1/courses/16663/files/2515231\" data-api-returntype=\"File\"\u003e\u003cimg role=\"presentation\" src=\"$CANVAS_COURSE_REFERENCE$/file_ref/gfdddb096d30f39ae83a5a81d4fd3f23c/preview\" alt=\"\" data-ally-user-updated-alt=\"\" data-decorative=\"true\" data-api-endpoint=\"https://westernwyoming.instructure.com/api/v1/courses/17193/files/2500887\" data-api-returntype=\"File\"\u003e\u003c/p\u003e\n\u003ch2\u003e\u003cstrong\u003e\u003cimg role=\"presentation\" src=\"/courses/15325/files/2350889/preview\" alt=\"\" data-ally-user-updated-alt=\"\" data-decorative=\"true\" data-api-endpoint=\"https://westernwyoming.instructure.com/api/v1/courses/15325/files/2350889\" data-api-returntype=\"File\"\u003e\u003cspan style=\"font-size: 18pt;\"\u003ePurpose\u003c/span\u003e\u003c/strong\u003e\u003c/h2\u003e\n\u003cp\u003eTo become familiar with Visual Studio Code and GitHub by completing a simple task.\u003c/p\u003e\n\u003ch2\u003e\u003cstrong\u003e\u003cimg role=\"presentation\" src=\"/courses/16663/files/2515349/preview\" alt=\"\" width=\"1542\" height=\"16\" data-ally-user-updated-alt=\"\" data-decorative=\"true\" data-api-endpoint=\"https://westernwyoming.instructure.com/api/v1/courses/16663/files/2515349\" data-api-returntype=\"File\"\u003e\u003c/strong\u003e\u003c/h2\u003e\n\u003ch2\u003e\u003cstrong\u003e\u003cimg role=\"presentation\" src=\"/courses/15325/files/2350965/preview\" alt=\"\" data-ally-user-updated-alt=\"\" data-decorative=\"true\" data-api-endpoint=\"https://westernwyoming.instructure.com/api/v1/courses/15325/files/2350965\" data-api-returntype=\"File\"\u003e\u003cspan style=\"font-size: 18pt;\"\u003eTask Overview\u003c/span\u003e\u003c/strong\u003e\u003c/h2\u003e\n\u003cp\u003eThere are two ways you can complete your programming projects:\u003c/p\u003e\n\u003col style=\"list-style-type: decimal;\"\u003e\n\u003cli\u003eWork locally in Visual Studio Code and upload your changes via file upload.\u003c/li\u003e\n\u003cli\u003eConnect Visual Studio Code to your remote repository and Commit and Push changes directly.\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch2\u003e\u003cstrong\u003e\u003cimg role=\"presentation\" src=\"/courses/16663/files/2515349/preview\" alt=\"\" width=\"1542\" height=\"16\" data-ally-user-updated-alt=\"\" data-decorative=\"true\" data-api-endpoint=\"https://westernwyoming.instructure.com/api/v1/courses/16663/files/2515349\" data-api-returntype=\"File\"\u003e\u003c/strong\u003e\u003c/h2\u003e\n\u003ch2\u003e\u003cstrong\u003e\u003cimg role=\"presentation\" src=\"/courses/15325/files/2350966/preview\" alt=\"\" data-ally-user-updated-alt=\"\" data-decorative=\"true\" data-api-endpoint=\"https://westernwyoming.instructure.com/api/v1/courses/15325/files/2350966\" data-api-returntype=\"File\"\u003e\u003cspan style=\"font-size: 18pt;\"\u003eDirections\u003c/span\u003e\u003c/strong\u003e\u003c/h2\u003e\n\u003cp data-sourcepos=\"3:1-3:209\"\u003eReady for your first Python program?! Let's use the tried and true Hello World program as our first program. All you need to do is enter the following (after filling in your name and date in the comments):\u003c/p\u003e\n\u003cdiv class=\"css-4g8ex7\"\u003e\n\u003cdiv class=\"css-14q30a4\"\u003e\n\u003cdiv class=\"css-a1fbvo\"\u003e\u003ccode\u003e\u003cspan class=\"ͼ25 css-1okvcqf\"\u003e# This is my first Python program.\u003c/span\u003e\u003c/code\u003e\u003c/div\u003e\n\u003cdiv class=\"css-a1fbvo\"\u003e\u003ccode\u003e\u003cspan class=\"ͼ2f css-1okvcqf\"\u003eprint\u003c/span\u003e\u003cspan class=\"ͼ20 css-1okvcqf\"\u003e(\u003c/span\u003e\u003cspan class=\"ͼ27 css-1okvcqf\"\u003e\"Hello World!\"\u003c/span\u003e\u003cspan class=\"ͼ20 css-1okvcqf\"\u003e)\u003c/span\u003e\u003c/code\u003e\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003cp data-sourcepos=\"9:1-9:17\"\u003e\u003cstrong\u003e1.\u003c/strong\u003e Before completing this assignment, you will need to download and unzip the assignment files and instructions from \u003ca href=\"https://github.com/Western-Wyoming-Computer-Science/COSC1010\" target=\"_blank\"\u003ehttps://github.com/Western-Wyoming-Computer-Science/COSC1010\u003c/a\u003e. You should save them locally (to a COSC1010 folder on your computer and/or storage device).\u0026nbsp;\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\" data-sourcepos=\"9:1-9:17\"\u003e\u003cimg src=\"/courses/16663/files/2526299/preview\" alt=\"Download files\" width=\"700\" height=\"381\" data-api-endpoint=\"https://westernwyoming.instructure.com/api/v1/courses/16663/files/2526299\" data-api-returntype=\"File\"\u003e\u003c/p\u003e\n\u003cp data-sourcepos=\"9:1-9:17\"\u003e\u003cstrong\u003e2. \u003c/strong\u003eOptional: upload the files to your GitHub COSC1010 Repository by file upload (you could also clone the files when you create your new repository...there are multiple ways of doing this and you will figure out which methods work better for you). Upload the files by clicking the Add File \u0026gt; Upload iles option. Copy the contents of the unzipped files to your repository and click the Commit Changes button.\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\" data-sourcepos=\"9:1-9:17\"\u003e\u003cimg role=\"presentation\" src=\"/courses/16663/files/2526380/preview\" alt=\"\" width=\"200\" height=\"124\" data-api-endpoint=\"https://westernwyoming.instructure.com/api/v1/courses/16663/files/2526380\" data-api-returntype=\"File\"\u003e\u003c/p\u003e\n\u003cp data-sourcepos=\"9:1-9:17\"\u003e\u003cstrong\u003e3.\u003c/strong\u003e Open Visual Studio Code and open your COSC1010 local folder (or connect remotely to your GitHub COSC1010 Repository). To open your local folder, go to File \u0026gt; Open Folder and navigate to the COSC1010 folder. Highlight (single-click, do not double-click) and click the Select Folder button.\u003c/p\u003e\n\u003cp data-sourcepos=\"9:1-9:17\"\u003e\u003cstrong\u003e4.\u003c/strong\u003e Navigate to the Your First Python Program folder and click on the instructions.md file. Every programming project will contain an instructions.md and main.py file (some may even contain additional .txt and .py supporting files).\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\" data-sourcepos=\"9:1-9:17\"\u003e\u003cimg role=\"presentation\" src=\"/courses/16663/files/2526382/preview\" alt=\"\" width=\"500\" height=\"317\" data-api-endpoint=\"https://westernwyoming.instructure.com/api/v1/courses/16663/files/2526382\" data-api-returntype=\"File\"\u003e\u003c/p\u003e\n\u003cp data-sourcepos=\"9:1-9:17\"\u003e\u003cstrong\u003e5.\u0026nbsp;\u003c/strong\u003eOpen the main.py file and complete the assignment. When you are done, be sure to run your code by clicking on the \u003cimg src=\"/courses/16663/files/2526383/preview\" alt=\"Run icon\" width=\"50\" height=\"32\" data-api-endpoint=\"https://westernwyoming.instructure.com/api/v1/courses/16663/files/2526383\" data-api-returntype=\"File\"\u003e icon at the top right (always test your code and fix any errors before submitting). Your code and output should look very similar to the screenshot below.\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\" data-sourcepos=\"9:1-9:17\"\u003e\u003cimg src=\"/courses/16663/files/2526384/preview\" alt=\"Completed code and output in terminal\" width=\"500\" height=\"317\" data-api-endpoint=\"https://westernwyoming.instructure.com/api/v1/courses/16663/files/2526384\" data-api-returntype=\"File\"\u003e\u003c/p\u003e\n\u003cp data-sourcepos=\"9:1-9:17\"\u003e\u003cstrong\u003e6.\u003c/strong\u003e Save your work in Visual Studio Code (Ctrl + S for Windows users or File \u0026gt; Save All), then upload your completed files to your GitHub COSC1010 repository. Click the Commit Changes button when done.\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\" data-sourcepos=\"9:1-9:17\"\u003e\u003cimg role=\"presentation\" src=\"/courses/16663/files/2526385/preview\" alt=\"\" width=\"500\" height=\"304\" data-api-endpoint=\"https://westernwyoming.instructure.com/api/v1/courses/16663/files/2526385\" data-api-returntype=\"File\"\u003e\u003c/p\u003e\n\u003cp data-sourcepos=\"9:1-9:17\"\u003e\u003cstrong\u003e7.\u003c/strong\u003e\u003cspan id=\"placeholder-6\" class=\"mceNonEditable\" style=\"display: inline-flex;\" aria-label=\"Loading placeholder for image.png\" data-placeholder-for=\"image.png\"\u003e\u003c/span\u003e\u0026nbsp;Verify that the changes uploaded by navigating to the Your First Python Program folder (in GitHub) and clicking on the main.py. If you see your code, you are good!\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cimg role=\"presentation\" src=\"/courses/16663/files/2526387/preview\" alt=\"\" width=\"500\" height=\"181\"\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e8.\u0026nbsp;\u003c/strong\u003eSubmit your GitHub COSC1010 URL when you are ready for me to grade this assignment.\u003c/p\u003e\n\u003cp data-sourcepos=\"9:1-9:17\"\u003e\u003cstrong\u003eReady! Set! Go!!\u0026nbsp;\u003c/strong\u003e\u003c/p\u003e\n\u003cp data-sourcepos=\"9:1-9:17\"\u003e\u003cimg role=\"presentation\" src=\"/courses/15325/files/2349749/preview\" alt=\"\" width=\"1542\" height=\"118\" data-ally-user-updated-alt=\"\" data-decorative=\"true\" data-api-endpoint=\"https://westernwyoming.instructure.com/api/v1/courses/15325/files/2349749\" data-api-returntype=\"File\"\u003e\u003c/p\u003e","points_possible":25.0,"grading_type":"points","submission_types":"online_text_entry,online_upload","grading_scheme":{"A":0.94,"A-":0.9,"B+":0.87,"B":0.84,"B-":0.8,"C+":0.77,"C":0.74,"C-":0.7,"D+":0.67,"D":0.64,"D-":0.61,"F":0.0}},"course_id":"16663","stats_url":"/api/v1/courses/16663/mastery_paths/stats","rule":null},"SUBMIT_ASSIGNMENT":{"ALLOWED_EXTENSIONS":[],"ID":"360454","GROUP_ID_FOR_USER":null},"badge_counts":{"submissions":3},"notices":[],"active_context_tab":"assignments"};
+    BRANDABLE_CSS_HANDLEBARS_INDEX = [["new_styles_normal_contrast","new_styles_high_contrast","new_styles_normal_contrast_rtl","new_styles_high_contrast_rtl"],{"10":["908ffbc673",0,"d5c9044c6e",2],"15":["c8540c43a4",0,"0a2196be1d",2],"19":["df5777ed9c"],"61":["1fb36890db","b83a603352","4bcf82f85a","0b171e092c"],"67":["700335fb7b",0,"1cc2485e2c",2],"71":["8ac0336ef0","bf3093677a","a8146a011b","449171073f"],"06":["ba28819778",0,"96b99aafe5",2],"f0":["b349f31f5e",0,0,0],"c8":["718c8509f5","33cd4c40e3","03d0fbcbe8","ec23096f0d"],"1e":["6eb4ecac8e","4100cb65ce","0faf4716c8","bed54fd75e"],"b3":["e5da23fb43","0911fc8ed3","05b2bb5a6f","ba2585de5c"],"0c":["4dae5befd2",0,"c18876be89",2],"da":["b5a7f9cd8f","a4e5066985","773390ae11","8e9071910c"],"1d":["2128789890",0,"e568085637",2],"08":["64bff5a97d"],"e2":["11429f119a"],"9f":["d39b291ba6",0,0,0],"2b":["c491abf31e","b11dc54da6","b58622671f","6bb4a7ae9e"],"2c":["8a926fc28b",0,0,0],"c2":["6f2721ae01"],"9c":["c31821c764",0,"1693aba1da",2],"c5":["44c6024769","31150a4a27","53dd277fa9","5fe61c91c2"],"f2":["51574f9b13"]}]
+    REMOTES = {};
+  </script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/1b99f79075f0b8e2c7f79e23f5b05dd6/variables-7dd4b80918af0e0218ec0229e4bd5873.js" defer="defer"></script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/timezone/America/Denver-8b016888d3.js" defer="defer"></script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/timezone/America/Denver-8b016888d3.js" defer="defer"></script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/timezone/en_US-80a0ce259b.js" defer="defer"></script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/react-entry-d6972cd7700667c0.js" crossorigin="anonymous" defer="defer"></script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/main-entry-b90432a747a829e9.js" crossorigin="anonymous" defer="defer"></script>
+<script>
+//<![CDATA[
+(window.bundles || (window.bundles = [])).push('assignment_show');
+(window.bundles || (window.bundles = [])).push('submit_assignment');
+(window.bundles || (window.bundles = [])).push('edit_rubric');
+(window.bundles || (window.bundles = [])).push('navigation_header');
+//]]>
+</script>
+  
+  <script type="text/javascript">
+    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
+    heap.load("3001039959");
+    heap.clearEventProperties();
+    heap.addEventProperties({'Base.appName': 'Canvas'});
+    setTimeout(() => {
+      if (ENV.current_user_heap_id && ENV.current_user_heap_id !== heap.identity) {
+        heap.identify(ENV.current_user_heap_id);
+      }
+      props = {}
+      if (ENV.current_user_roles) {
+        props['role'] = ENV.current_user_roles[ENV.current_user_roles.length - 1]
+      }
+      if (ENV.DOMAIN_ROOT_ACCOUNT_UUID) {
+        props['Canvas.accountId'] = ENV.DOMAIN_ROOT_ACCOUNT_UUID
+      }
+      if (ENV.DOMAIN_ROOT_ACCOUNT_SFID) {
+        props['Canvas.salesforceAccountId'] = ENV.DOMAIN_ROOT_ACCOUNT_SFID
+      }
+      if (Object.keys(props).length > 0) {
+        heap.addUserProperties(props);
+      }
+    }, 1000);
+  </script>
+<style type="text/css"></style><script defer="defer" type="text/javascript" src="https://wwcc.evaluationkit.com/canvas/js"></script><style data-global-nav-custom-css="set"></style><link data-webpack="canvas-lms:chunk-58416" rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/58416-chunk-62380000ac7f0b98.css"><link rel="stylesheet" type="text/css" href="https://prod.ally.ac//static/integration/custom/canvas.8617bdb9cecd515278bfe72fc951f587.css"><style id="inert-style">
+[inert] {
+  pointer-events: none;
+  cursor: default;
+}
+
+[inert], [inert] * {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+</style><link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/jst/PaginatedView-8a926fc28b.css" data-loaded-by-brandablecss="true"><link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/jst/TreeBrowser-44c6024769.css" data-loaded-by-brandablecss="true"><link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/jst/MoveOutcomeDialog-d39b291ba6.css" data-loaded-by-brandablecss="true"><style data-emotion="css" data-s=""></style></head>
+
+<body class="with-left-side course-menu-expanded with-right-side assignments primary-nav-expanded full-width context-course_16663 responsive_student_grades_page ally-tooltips-enabled webkit chrome no-touch">
+
+<noscript>
+  <div role="alert" class="ic-flash-static ic-flash-error">
+    <div class="ic-flash__icon" aria-hidden="true">
+      <i class="icon-warning"></i>
+    </div>
+    <h1>You need to have JavaScript enabled in order to access this site.</h1>
+  </div>
+</noscript>
+
+
+
+
+<div id="flash_message_holder"></div>
+<div id="flash_screenreader_holder" role="alert" aria-live="assertive" aria-relevant="additions" class="screenreader-only" aria-atomic="true"></div>
+
+<div id="application" class="ic-app">
+  
+
+
+
+
+<header id="mobile-header" class="no-print">
+  <button type="button" class="Button Button--icon-action-rev Button--large mobile-header-hamburger">
+    <i class="icon-solid icon-hamburger"></i>
+    <span id="mobileHeaderInboxUnreadBadge" class="menu-item__badge" style="min-width: 0; top: 12px; height: 12px; right: 6px; display:none;"></span>
+    <span class="screenreader-only">Dashboard</span>
+  </button>
+  <div class="mobile-header-space"></div>
+    <a class="mobile-header-title expandable" href="https://westernwyoming.instructure.com/courses/16663" role="button" aria-controls="mobileContextNavContainer">
+      <div>COSC 1010 NT</div>
+        <div>Your First Python Program</div>
+    </a>
+    <div class="mobile-header-space"></div>
+    <button type="button" class="Button Button--icon-action-rev Button--large mobile-header-arrow" aria-label="Navigation Menu">
+      <i class="icon-arrow-open-down" id="mobileHeaderArrowIcon"></i>
+    </button>
+</header>
+<nav id="mobileContextNavContainer" aria-expanded="false"></nav>
+
+<header id="header" class="ic-app-header no-print ">
+  <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#content" id="skip_navigation_link">Skip To Content</a>
+  <div role="region" class="ic-app-header__main-navigation" aria-label="Global Navigation">
+      <div class="ic-app-header__logomark-container">
+        <a href="https://westernwyoming.instructure.com/" class="ic-app-header__logomark">
+          <span class="screenreader-only">Dashboard</span>
+        </a>
+      </div>
+    <ul id="menu" class="ic-app-header__menu-list">
+        <li class="menu-item ic-app-header__menu-list-item ">
+          <a id="global_nav_profile_link" role="button" href="https://westernwyoming.instructure.com/profile/settings" class="ic-app-header__menu-list-link">
+            <div class="menu-item-icon-container">
+              <div aria-hidden="true" class="fs-exclude ic-avatar ">
+                <img src="./Your First Python Program_files/avatar-50.png" alt="Jocelyn Wilson">
+              </div>
+              <span class="menu-item__badge"></span>
+            </div>
+            <div class="menu-item__text">
+              Account
+            </div>
+          </a>
+        </li>
+      <li class="ic-app-header__menu-list-item ">
+        <a id="global_nav_dashboard_link" href="https://westernwyoming.instructure.com/" class="ic-app-header__menu-list-link">
+          <div class="menu-item-icon-container" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--dashboard" version="1.1" x="0" y="0" viewBox="0 0 280 200" enable-background="new 0 0 280 200" xml:space="preserve"><path d="M273.09,180.75H197.47V164.47h62.62A122.16,122.16,0,1,0,17.85,142a124,124,0,0,0,2,22.51H90.18v16.29H6.89l-1.5-6.22A138.51,138.51,0,0,1,1.57,142C1.57,65.64,63.67,3.53,140,3.53S278.43,65.64,278.43,142a137.67,137.67,0,0,1-3.84,32.57ZM66.49,87.63,50.24,71.38,61.75,59.86,78,76.12Zm147,0L202,76.12l16.25-16.25,11.51,11.51ZM131.85,53.82v-23h16.29v23Zm15.63,142.3a31.71,31.71,0,0,1-28-16.81c-6.4-12.08-15.73-72.29-17.54-84.25a8.15,8.15,0,0,1,13.58-7.2c8.88,8.21,53.48,49.72,59.88,61.81a31.61,31.61,0,0,1-27.9,46.45ZM121.81,116.2c4.17,24.56,9.23,50.21,12,55.49A15.35,15.35,0,1,0,161,157.3C158.18,152,139.79,133.44,121.81,116.2Z"></path></svg>
+
+          </div>
+          <div class="menu-item__text">
+            Dashboard
+          </div>
+        </a>
+      </li>
+        <li class="menu-item ic-app-header__menu-list-item ic-app-header__menu-list-item--active" aria-current="page">
+          <a id="global_nav_courses_link" role="button" href="https://westernwyoming.instructure.com/courses" class="ic-app-header__menu-list-link">
+            <div class="menu-item-icon-container" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--courses" version="1.1" x="0" y="0" viewBox="0 0 280 259" enable-background="new 0 0 280 259" xml:space="preserve"><path d="M73.31,198c-11.93,0-22.22,8-24,18.73a26.67,26.67,0,0,0-.3,3.63v.3a22,22,0,0,0,5.44,14.65,22.47,22.47,0,0,0,17.22,8H200V228.19h-134V213.08H200V198Zm21-105.74h90.64V62H94.3ZM79.19,107.34V46.92H200v60.42Zm7.55,30.21V122.45H192.49v15.11ZM71.65,16.71A22.72,22.72,0,0,0,49,39.36V190.88a41.12,41.12,0,0,1,24.32-8h157V16.71ZM33.88,39.36A37.78,37.78,0,0,1,71.65,1.6H245.36V198H215.15v45.32h22.66V258.4H71.65a37.85,37.85,0,0,1-37.76-37.76Z"></path></svg>
+
+            </div>
+            <div class="menu-item__text">
+              Courses
+            </div>
+          </a>
+        </li>
+      <li class="menu-item ic-app-header__menu-list-item ">
+        <a id="global_nav_calendar_link" href="https://westernwyoming.instructure.com/calendar" class="ic-app-header__menu-list-link">
+          <div class="menu-item-icon-container" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--calendar" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M197.07,213.38h16.31V197.07H197.07Zm-16.31,16.31V180.76h48.92v48.92Zm-48.92-16.31h16.31V197.07H131.85Zm-16.31,16.31V180.76h48.92v48.92ZM66.62,213.38H82.93V197.07H66.62ZM50.32,229.68V180.76H99.24v48.92Zm146.75-81.53h16.31V131.85H197.07Zm-16.31,16.31V115.54h48.92v48.92Zm-48.92-16.31h16.31V131.85H131.85Zm-16.31,16.31V115.54h48.92v48.92ZM66.62,148.15H82.93V131.85H66.62ZM50.32,164.46V115.54H99.24v48.92ZM34,262.29H246V82.93H34ZM246,66.62V42.16A8.17,8.17,0,0,0,237.84,34H213.38v8.15a8.15,8.15,0,1,1-16.31,0V34H82.93v8.15a8.15,8.15,0,0,1-16.31,0V34H42.16A8.17,8.17,0,0,0,34,42.16V66.62Zm-8.15-48.92a24.49,24.49,0,0,1,24.46,24.46V278.6H17.71V42.16A24.49,24.49,0,0,1,42.16,17.71H66.62V9.55a8.15,8.15,0,0,1,16.31,0v8.15H197.07V9.55a8.15,8.15,0,1,1,16.31,0v8.15Z"></path></svg>
+
+          </div>
+          <div class="menu-item__text">
+            Calendar
+          </div>
+        </a>
+      </li>
+      <li class="menu-item ic-app-header__menu-list-item ">
+      <!-- TODO: Add back global search when available -->
+        <a id="global_nav_conversations_link" href="https://westernwyoming.instructure.com/conversations" class="ic-app-header__menu-list-link">
+          <div class="menu-item-icon-container">
+            <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--inbox" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M91.72,120.75h96.56V104.65H91.72Zm0,48.28h80.47V152.94H91.72Zm0-96.56h80.47V56.37H91.72Zm160.94,34.88H228.52V10.78h-177v96.56H27.34A24.17,24.17,0,0,0,3.2,131.48V244.14a24.17,24.17,0,0,0,24.14,24.14H252.66a24.17,24.17,0,0,0,24.14-24.14V131.48A24.17,24.17,0,0,0,252.66,107.34Zm0,16.09a8.06,8.06,0,0,1,8,8v51.77l-32.19,19.31V123.44ZM67.58,203.91v-177H212.42v177ZM27.34,123.44H51.48v79.13L19.29,183.26V131.48A8.06,8.06,0,0,1,27.34,123.44ZM252.66,252.19H27.34a8.06,8.06,0,0,1-8-8V202l30,18H230.75l30-18v42.12A8.06,8.06,0,0,1,252.66,252.19Z"></path></svg>
+</span>
+            <span class="menu-item__badge"></span>
+          </div>
+          <div class="menu-item__text">
+            Inbox
+          </div>
+        </a>
+      </li>
+        <li class="menu-item ic-app-header__menu-list-item">
+          <a id="global_nav_history_link" role="button" href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="ic-app-header__menu-list-link">
+            <div class="menu-item-icon-container" aria-hidden="true">
+              <svg viewBox="0 0 1920 1920" class="ic-icon-svg menu-item__icon svg-icon-history" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <path d="M960 112.941c-467.125 0-847.059 379.934-847.059 847.059 0 467.125 379.934 847.059 847.059 847.059 467.125 0 847.059-379.934 847.059-847.059 0-467.125-379.934-847.059-847.059-847.059M960 1920C430.645 1920 0 1489.355 0 960S430.645 0 960 0s960 430.645 960 960-430.645 960-960 960m417.905-575.955L903.552 988.28V395.34h112.941v536.47l429.177 321.77-67.765 90.465z" stroke="none" stroke-width="1" fill-rule="evenodd"></path>
+</svg>
+            </div>
+            <div class="menu-item__text">
+              History
+            </div>
+          </a>
+        </li>
+        
+    <li id="context_external_tool_266_menu_item" class="globalNavExternalTool menu-item ic-app-header__menu-list-item">
+      <a class="ic-app-header__menu-list-link" href="https://westernwyoming.instructure.com/accounts/1/external_tools/266?launch_type=global_navigation">
+          <svg version="1.1" class="ic-icon-svg ic-icon-svg--lti menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
+            <path d="M37.5331419,41.3325083 L25.3997411,41.3325083 L25.3997411,52.8756632 C27.5972597,53.6451225 29.1733531,55.7378472 29.1733531,58.198822 C29.1733531,61.3127847 26.6499049,63.8371501 23.5370738,63.8371501 C20.4242427,63.8371501 17.9007945,61.3127847 17.9007945,58.198822 C17.9007945,55.7378472 19.4768879,53.6451225 21.6744065,52.8756632 L21.6744065,41.3325083 L17.5706263,41.3325083 L17.5717453,47.9192726 C17.5717453,50.4825483 15.4945548,52.5604939 12.9322104,52.5604939 L10.9667199,52.5588751 C10.2051449,54.7710384 8.10625368,56.3604121 5.63627929,56.3604121 C2.52344819,56.3604121 2.84217094e-14,53.8360466 2.84217094e-14,50.722084 C2.84217094e-14,47.6081214 2.52344819,45.0837559 5.63627929,45.0837559 C8.08603407,45.0837559 10.1707563,46.6472143 10.9477485,48.8310912 L12.9905507,48.8310912 C13.4625615,48.8310912 13.8452018,48.4483118 13.8452018,47.9761294 L13.8452018,41.3325083 L5.65400042,41.3325083 C4.57511859,41.3325083 3.70051205,40.4575839 3.70051205,39.3783099 L3.70051205,1.95419847 C3.70051205,0.874924458 4.57511859,-1.42108547e-14 5.65400042,-1.42108547e-14 L57.2376164,-1.42108547e-14 C58.3164983,-1.42108547e-14 59.1911048,0.874924458 59.1911048,1.95419847 L59.1911048,39.3783099 C59.1911048,40.4575839 58.3164983,41.3325083 57.2376164,41.3325083 L49.085452,41.3325083 L49.085452,47.9761294 C49.085452,48.4483118 49.4680923,48.8310912 49.9401031,48.8310912 L51.9829054,48.8310912 C52.7598976,46.6472143 54.8446197,45.0837559 57.2943745,45.0837559 C60.4072056,45.0837559 62.9306538,47.6081214 62.9306538,50.722084 C62.9306538,53.8360466 60.4072056,56.3604121 57.2943745,56.3604121 C54.8244001,56.3604121 52.725509,54.7710384 51.9639339,52.5588751 L49.9996524,52.5604938 C47.436099,52.5604939 45.3589085,50.4825483 45.3589085,47.9192726 L45.3600275,41.3325083 L41.2584765,41.3325083 L41.2584765,52.8756632 C43.4559951,53.6451225 45.0320885,55.7378472 45.0320885,58.198822 C45.0320885,61.3127847 42.5086403,63.8371501 39.3958092,63.8371501 C36.2829781,63.8371501 33.7595299,61.3127847 33.7595299,58.198822 C33.7595299,55.7378472 35.3356233,53.6451225 37.5331419,52.8756632 L37.5331419,41.3325083 Z M39.4407163,60.0484002 C40.4618389,60.0484002 41.2896223,59.2203158 41.2896223,58.198822 C41.2896223,57.1773282 40.4618389,56.3492439 39.4407163,56.3492439 C38.4195937,56.3492439 37.5918102,57.1773282 37.5918102,58.198822 C37.5918102,59.2203158 38.4195937,60.0484002 39.4407163,60.0484002 Z M23.5819809,60.0484002 C24.6031035,60.0484002 25.4308869,59.2203158 25.4308869,58.198822 C25.4308869,57.1773282 24.6031035,56.3492439 23.5819809,56.3492439 C22.5608582,56.3492439 21.7330748,57.1773282 21.7330748,58.198822 C21.7330748,59.2203158 22.5608582,60.0484002 23.5819809,60.0484002 Z M57.3392816,52.5716621 C58.3604042,52.5716621 59.1881877,51.7435778 59.1881877,50.722084 C59.1881877,49.7005902 58.3604042,48.8725058 57.3392816,48.8725058 C56.318159,48.8725058 55.4903755,49.7005902 55.4903755,50.722084 C55.4903755,51.7435778 56.318159,52.5716621 57.3392816,52.5716621 Z M5.59137222,52.5716621 C6.61249484,52.5716621 7.44027829,51.7435778 7.44027829,50.722084 C7.44027829,49.7005902 6.61249484,48.8725058 5.59137222,48.8725058 C4.57024959,48.8725058 3.74246615,49.7005902 3.74246615,50.722084 C3.74246615,51.7435778 4.57024959,52.5716621 5.59137222,52.5716621 Z M30.1554353,12.9293586 L35.7525093,16.2831044 C36.070684,16.5163802 36.2591714,16.8906762 36.2591714,17.2892282 C36.2591714,17.6877801 36.070684,18.0620761 35.7525093,18.2953519 L30.1554353,21.6490977 C29.7776345,21.8706324 29.3121961,21.8707698 28.9342686,21.6494581 C28.5563411,21.4281465 28.3232712,21.0189676 28.3227651,20.575899 L28.3227651,14.0025573 C28.3232712,13.5594887 28.5563411,13.1503099 28.9342686,12.9289982 C29.3121961,12.7076865 29.7776345,12.7078239 30.1554353,12.9293586 Z M55.6445081,31.031948 L55.6445081,4.52360758 C55.6445081,3.98397057 55.2072048,3.54650834 54.6677639,3.54650834 L8.22385298,3.54650834 C7.68441206,3.54650834 7.24710879,3.98397057 7.24710879,4.52360758 L7.24710879,31.031948 L55.6445081,31.031948 Z M55.6445081,34.5784563 L7.24710879,34.5784563 L7.24710879,36.8093831 C7.24710879,37.3490201 7.68441206,37.7864824 8.22385298,37.7864824 L54.6677639,37.7864824 C55.2072048,37.7864824 55.6445081,37.3490201 55.6445081,36.8093831 L55.6445081,34.5784563 Z"></path>
+          </svg>
+        <div class="menu-item__text">
+          Studio
+        </div>
+      </a>
+    </li>
+
+      <li class="ic-app-header__menu-list-item">
+        <a id="global_nav_help_link" role="button" class="ic-app-header__menu-list-link" data-track-category="help system" data-track-label="help button" href="https://help.instructure.com/">
+          <div class="menu-item-icon-container" role="presentation">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg menu-item__icon svg-icon-help" version="1.1" x="0" y="0" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve" fill="currentColor"><path d="M100,127.88A11.15,11.15,0,1,0,111.16,139,11.16,11.16,0,0,0,100,127.88Zm8.82-88.08a33.19,33.19,0,0,1,23.5,23.5,33.54,33.54,0,0,1-24,41.23,3.4,3.4,0,0,0-2.74,3.15v9.06H94.42v-9.06a14.57,14.57,0,0,1,11.13-14,22.43,22.43,0,0,0,13.66-10.27,22.73,22.73,0,0,0,2.31-17.37A21.92,21.92,0,0,0,106,50.59a22.67,22.67,0,0,0-19.68,3.88,22.18,22.18,0,0,0-8.65,17.64H66.54a33.25,33.25,0,0,1,13-26.47A33.72,33.72,0,0,1,108.82,39.8ZM100,5.2A94.8,94.8,0,1,0,194.8,100,94.91,94.91,0,0,0,100,5.2m0,178.45A83.65,83.65,0,1,1,183.65,100,83.73,83.73,0,0,1,100,183.65" transform="translate(-5.2 -5.2)"></path></svg>
+
+            <span class="menu-item__badge"></span>
+          </div>
+          <div class="menu-item__text">
+            Help
+          </div>
+</a>      </li>
+    <li id="global_nav_western_s_writing_center_link" class="ic-app-header__menu-list-item"><a id="global_nav_western_s_writing_center_link" role="button" href="https://wwcc-wy.libguides.com/TutoringWriting" target="_blank" class="ic-app-header__menu-list-link">
+            <div class="menu-item-icon-container" role="presentation"><span class="svg-western_s_writing_center-holder"><div id="global_nav_western_s_writing_center_svg" class="menu-item-icon-container" role="presentation"><i class="icon-line icon-ms-word gnct_inst_menu_icon"></i></div></span></div>
+            <div class="menu-item__text">Western's Writing Center</div></a></li></ul>
+  </div>
+  <div class="ic-app-header__secondary-navigation">
+    <ul class="ic-app-header__menu-list">
+      <li class="menu-item ic-app-header__menu-list-item">
+        <a id="primaryNavToggle" role="button" href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="ic-app-header__menu-list-link ic-app-header__menu-list-link--nav-toggle" aria-label="Minimize global navigation" title="Minimize global navigation">
+          <div class="menu-item-icon-container" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--navtoggle" version="1.1" x="0" y="0" width="40" height="32" viewBox="0 0 40 32" xml:space="preserve">
+  <path d="M39.5,30.28V2.48H37.18v27.8Zm-4.93-13.9L22.17,4,20.53,5.61l9.61,9.61H.5v2.31H30.14l-9.61,9.61,1.64,1.64Z"></path>
+</svg>
+
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div id="global_nav_tray_container"></div>
+  <div id="global_nav_tour"></div>
+</header>
+
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="close_instructure_ajax_error_box_link">Close</a></div>
+    <iframe id="instructure_ajax_error_result" src="./Your First Python Program_files/saved_resource.html" style="border: 0;" title="Error"></iframe>
+  </div>
+
+  <div id="wrapper" class="ic-Layout-wrapper">
+        <div class="ic-app-nav-toggle-and-crumbs no-print">
+            <button type="button" id="courseMenuToggle" class="Button Button--link ic-app-course-nav-toggle" aria-live="polite" aria-label="Hide Courses Navigation Menu">
+              <i class="icon-hamburger" aria-hidden="true"></i>
+            </button>
+
+          <div class="ic-app-crumbs ">
+              <nav id="breadcrumbs" role="navigation" aria-label="breadcrumbs"><ul><li class="home"><a href="https://westernwyoming.instructure.com/"><span class="ellipsible"><i class="icon-home" title="My Dashboard">
+  <span class="screenreader-only">My Dashboard</span>
+</i>
+</span></a></li><li><a href="https://westernwyoming.instructure.com/courses/16663"><span class="ellipsible">COSC 1010 NT</span></a></li><li><a href="https://westernwyoming.instructure.com/courses/16663/assignments"><span class="ellipsible">Assignments</span></a></li><li><a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454"><span class="ellipsible">Your First Python Program</span></a></li></ul></nav>
+          </div>
+
+
+          <div class="right-of-crumbs">
+              
+          </div>
+
+        </div>
+    <div id="main" class="ic-Layout-columns">
+        <div class="ic-Layout-watermark"></div>
+        <div id="left-side" class="ic-app-course-menu ic-sticky-on list-view" style="display: block">
+          <div id="sticky-container" class="ic-sticky-frame">
+              <span id="section-tabs-header-subtitle" class="ellipsis">FALL 2024</span>
+            <nav role="navigation" aria-label="Courses Navigation Menu"><ul id="section-tabs"><li class="section"><a href="https://westernwyoming.instructure.com/courses/16663" class="home" tabindex="0">Home</a></li><li class="section"><a href="https://westernwyoming.instructure.com/courses/16663/external_tools/9021" class="context_external_tool_9021" tabindex="0">Simple Syllabus</a></li><li class="section"><a href="https://westernwyoming.instructure.com/courses/16663/announcements" class="announcements" tabindex="0">Announcements</a></li><li class="section"><a href="https://westernwyoming.instructure.com/courses/16663/modules" class="modules" tabindex="0">Modules</a></li><li class="section"><a href="https://westernwyoming.instructure.com/courses/16663/grades" class="grades" tabindex="0">Grades<b class="nav-badge">3</b></a></li><li class="section"><a href="https://westernwyoming.instructure.com/courses/16663/external_tools/1499" class="context_external_tool_1499" tabindex="0">Office 365</a></li><li class="section"><a href="https://westernwyoming.instructure.com/courses/16663/external_tools/10728" class="context_external_tool_10728" tabindex="0">Zoom</a></li><li class="section"><a href="https://westernwyoming.instructure.com/courses/16663/external_tools/10756?display=borderless" class="context_external_tool_10756" target="_blank" tabindex="0">NetTutor</a></li><li class="section"><a href="https://westernwyoming.instructure.com/courses/16663/external_tools/10822" class="context_external_tool_10822" tabindex="0">Course Evaluations</a></li><li class="section"><a href="https://westernwyoming.instructure.com/courses/16663/external_tools/11358" class="context_external_tool_11358" tabindex="0">Lucid</a></li><li class="section"><a href="https://westernwyoming.instructure.com/courses/16663/external_tools/11443" class="context_external_tool_11443" tabindex="0">VitalSource Course Materials</a></li><li class="section"><a href="https://westernwyoming.instructure.com/courses/16663/external_tools/11486" class="context_external_tool_11486" tabindex="0">Ellucian Grade Passback 1.3</a></li></ul></nav>
+          </div>
+        </div>
+      <div id="not_right_side" class="ic-app-main-content">
+        <div id="content-wrapper" class="ic-Layout-contentWrapper">
+          
+          <div id="content" class="ic-Layout-contentMain" role="main">
+            
+<style>
+  #right-side-wrapper {
+    height: 100%;
+  }
+
+  .assignment_header {
+    border-bottom: 1px solid #a4a4a4;
+    overflow: hidden;
+  }
+
+  #assignment_head {
+    margin-top: 0;
+    font-weight: bold;
+  }
+
+  .lock_explanation {
+    text-align: left;
+    margin-top: 20px;
+  }
+</style>
+
+
+
+<div id="assignment_show" class="assignment content_underline_links" data-lti-page-content="true">
+    <!--Student View-->
+    <div class="assignment-title">
+      <div class="title-content">
+        <h1 class="title">
+          Your First Python Program
+        <button aria-haspopup="dialog" class="ally-accessible-versions ally-add-tooltip" data-id="assignment:360454" data-ally-content-id="assignment:360454" data-ally-richcontent-eid="assignment:360454" aria-label="Alternative formats" title="Alternative formats">
+    <span class="ally-prominent-af-download-button"></span>
+</button></h1>
+      </div>
+      <div class="assignment-buttons">
+        
+
+        <button type="button" class="Button Button--primary submit_assignment_link ">Start Assignment</button>
+      </div>
+    </div>
+    
+<ul class="student-assignment-overview">
+  <li>
+    <span class="title">Due</span>
+    <span class="value">
+          <span class="date_text">
+                <span class="display_date">Monday</span> by 
+                <span class="display_time">11:59pm</span>
+          </span><!--
+        --></span>
+  </li>
+    <li>
+      <span class="title">Points</span>
+      <span class="value">25</span>
+    </li>
+    <li>
+      <span class="title">Submitting</span>
+      <span class="value">a text entry box or a file upload</span>
+    </li>
+  
+
+  <div class="clear"></div>
+</ul>
+
+  <div class="clear"></div>
+
+
+  <div class="clear"></div>
+
+
+
+
+  <div class="description user_content enhanced" data-resource-type="assignment.body" data-resource-id="360454"><p><img id="2501056" src="https://westernwyoming.instructure.com/courses/16663/files/2515231/preview" alt="Module 2 Assignment banner" data-ally-user-updated-alt="Module 2 Assignment banner" data-api-endpoint="https://westernwyoming.instructure.com/api/v1/courses/16663/files/2515231" data-api-returntype="File" data-id="2515231"><img role="presentation" src="https://westernwyoming.instructure.com/courses/16663/assignments/$CANVAS_COURSE_REFERENCE$/file_ref/gfdddb096d30f39ae83a5a81d4fd3f23c/preview" alt="" data-ally-user-updated-alt="" data-decorative="true" data-api-endpoint="https://westernwyoming.instructure.com/api/v1/courses/17193/files/2500887" data-api-returntype="File"></p>
+<h2><strong><img role="presentation" src="https://westernwyoming.instructure.com/courses/15325/files/2350889/preview" alt="" data-ally-user-updated-alt="" data-decorative="true" data-api-endpoint="https://westernwyoming.instructure.com/api/v1/courses/15325/files/2350889" data-api-returntype="File" data-id="2350889"><span style="font-size: 18pt;">Purpose</span></strong></h2>
+<p>To become familiar with Visual Studio Code and GitHub by completing a simple task.</p>
+<h2><strong><img role="presentation" src="https://westernwyoming.instructure.com/courses/16663/files/2515349/preview" alt="" width="1542" height="16" data-ally-user-updated-alt="" data-decorative="true" data-api-endpoint="https://westernwyoming.instructure.com/api/v1/courses/16663/files/2515349" data-api-returntype="File" data-id="2515349"></strong></h2>
+<h2><strong><img role="presentation" src="https://westernwyoming.instructure.com/courses/15325/files/2350965/preview" alt="" data-ally-user-updated-alt="" data-decorative="true" data-api-endpoint="https://westernwyoming.instructure.com/api/v1/courses/15325/files/2350965" data-api-returntype="File" data-id="2350965"><span style="font-size: 18pt;">Task Overview</span></strong></h2>
+<p>There are two ways you can complete your programming projects:</p>
+<ol style="list-style-type: decimal;">
+<li>Work locally in Visual Studio Code and upload your changes via file upload.</li>
+<li>Connect Visual Studio Code to your remote repository and Commit and Push changes directly.</li>
+</ol>
+<h2><strong><img role="presentation" src="https://westernwyoming.instructure.com/courses/16663/files/2515349/preview" alt="" width="1542" height="16" data-ally-user-updated-alt="" data-decorative="true" data-api-endpoint="https://westernwyoming.instructure.com/api/v1/courses/16663/files/2515349" data-api-returntype="File" data-id="2515349"></strong></h2>
+<h2><strong><img role="presentation" src="https://westernwyoming.instructure.com/courses/15325/files/2350966/preview" alt="" data-ally-user-updated-alt="" data-decorative="true" data-api-endpoint="https://westernwyoming.instructure.com/api/v1/courses/15325/files/2350966" data-api-returntype="File" data-id="2350966"><span style="font-size: 18pt;">Directions</span></strong></h2>
+<p data-sourcepos="3:1-3:209">Ready for your first Python program?! Let's use the tried and true Hello World program as our first program. All you need to do is enter the following (after filling in your name and date in the comments):</p>
+<div class="css-4g8ex7">
+<div class="css-14q30a4">
+<div class="css-a1fbvo"><code><span class="ͼ25 css-1okvcqf"># This is my first Python program.</span></code></div>
+<div class="css-a1fbvo"><code><span class="ͼ2f css-1okvcqf">print</span><span class="ͼ20 css-1okvcqf">(</span><span class="ͼ27 css-1okvcqf">"Hello World!"</span><span class="ͼ20 css-1okvcqf">)</span></code></div>
+</div>
+</div>
+<p data-sourcepos="9:1-9:17"><strong>1.</strong> Before completing this assignment, you will need to download and unzip the assignment files and instructions from <a href="https://github.com/Western-Wyoming-Computer-Science/COSC1010" target="_blank" class="external" rel="noreferrer noopener"><span>https://github.com/Western-Wyoming-Computer-Science/COSC1010</span><span class="external_link_icon" style="margin-inline-start: 5px; display: inline-block; text-indent: initial; " role="presentation"><svg viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" style="width:1em; height:1em; vertical-align:middle; fill:currentColor">
+    <path d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z" fill-rule="evenodd"></path>
+</svg>
+<span class="screenreader-only">Links to an external site.</span></span></a>. You should save them locally (to a COSC1010 folder on your computer and/or storage device).&nbsp;</p>
+<p style="padding-left: 40px;" data-sourcepos="9:1-9:17"><img src="https://westernwyoming.instructure.com/courses/16663/files/2526299/preview" alt="Download files" width="700" height="381" data-api-endpoint="https://westernwyoming.instructure.com/api/v1/courses/16663/files/2526299" data-api-returntype="File" data-id="2526299"></p>
+<p data-sourcepos="9:1-9:17"><strong>2. </strong>Optional: upload the files to your GitHub COSC1010 Repository by file upload (you could also clone the files when you create your new repository...there are multiple ways of doing this and you will figure out which methods work better for you). Upload the files by clicking the Add File &gt; Upload iles option. Copy the contents of the unzipped files to your repository and click the Commit Changes button.</p>
+<p style="padding-left: 40px;" data-sourcepos="9:1-9:17"><img role="presentation" src="https://westernwyoming.instructure.com/courses/16663/files/2526380/preview" alt="" width="200" height="124" data-api-endpoint="https://westernwyoming.instructure.com/api/v1/courses/16663/files/2526380" data-api-returntype="File" data-id="2526380"></p>
+<p data-sourcepos="9:1-9:17"><strong>3.</strong> Open Visual Studio Code and open your COSC1010 local folder (or connect remotely to your GitHub COSC1010 Repository). To open your local folder, go to File &gt; Open Folder and navigate to the COSC1010 folder. Highlight (single-click, do not double-click) and click the Select Folder button.</p>
+<p data-sourcepos="9:1-9:17"><strong>4.</strong> Navigate to the Your First Python Program folder and click on the instructions.md file. Every programming project will contain an instructions.md and main.py file (some may even contain additional .txt and .py supporting files).</p>
+<p style="padding-left: 40px;" data-sourcepos="9:1-9:17"><img role="presentation" src="https://westernwyoming.instructure.com/courses/16663/files/2526382/preview" alt="" width="500" height="317" data-api-endpoint="https://westernwyoming.instructure.com/api/v1/courses/16663/files/2526382" data-api-returntype="File" data-id="2526382"></p>
+<p data-sourcepos="9:1-9:17"><strong>5.&nbsp;</strong>Open the main.py file and complete the assignment. When you are done, be sure to run your code by clicking on the <img src="https://westernwyoming.instructure.com/courses/16663/files/2526383/preview" alt="Run icon" width="50" height="32" data-api-endpoint="https://westernwyoming.instructure.com/api/v1/courses/16663/files/2526383" data-api-returntype="File" data-id="2526383"> icon at the top right (always test your code and fix any errors before submitting). Your code and output should look very similar to the screenshot below.</p>
+<p style="padding-left: 40px;" data-sourcepos="9:1-9:17"><img src="https://westernwyoming.instructure.com/courses/16663/files/2526384/preview" alt="Completed code and output in terminal" width="500" height="317" data-api-endpoint="https://westernwyoming.instructure.com/api/v1/courses/16663/files/2526384" data-api-returntype="File" data-id="2526384"></p>
+<p data-sourcepos="9:1-9:17"><strong>6.</strong> Save your work in Visual Studio Code (Ctrl + S for Windows users or File &gt; Save All), then upload your completed files to your GitHub COSC1010 repository. Click the Commit Changes button when done.</p>
+<p style="padding-left: 40px;" data-sourcepos="9:1-9:17"><img role="presentation" src="https://westernwyoming.instructure.com/courses/16663/files/2526385/preview" alt="" width="500" height="304" data-api-endpoint="https://westernwyoming.instructure.com/api/v1/courses/16663/files/2526385" data-api-returntype="File" data-id="2526385"></p>
+<p data-sourcepos="9:1-9:17"><strong>7.</strong><span id="placeholder-6" class="mceNonEditable" style="display: inline-flex;" aria-label="Loading placeholder for image.png" data-placeholder-for="image.png"></span>&nbsp;Verify that the changes uploaded by navigating to the Your First Python Program folder (in GitHub) and clicking on the main.py. If you see your code, you are good!</p>
+<p style="padding-left: 40px;"><img role="presentation" src="https://westernwyoming.instructure.com/courses/16663/files/2526387/preview" alt="" width="500" height="181" data-id="2526387"></p>
+<p><strong>8.&nbsp;</strong>Submit your GitHub COSC1010 URL when you are ready for me to grade this assignment.</p>
+<p data-sourcepos="9:1-9:17"><strong>Ready! Set! Go!!&nbsp;</strong></p>
+<p data-sourcepos="9:1-9:17"><img role="presentation" src="https://westernwyoming.instructure.com/courses/15325/files/2349749/preview" alt="" width="1542" height="118" data-ally-user-updated-alt="" data-decorative="true" data-api-endpoint="https://westernwyoming.instructure.com/api/v1/courses/15325/files/2349749" data-api-returntype="File" data-id="2349749"></p></div>
+
+
+  <div style="display: none;">
+    <span class="timestamp">1725343140</span>
+    <span class="due_date_string">09/02/2024</span>
+    <span class="due_time_string">11:59pm</span>
+  </div>
+</div>
+
+
+  
+<div style="display: none;" id="submit_assignment" data-context_code="course_16663" data-asset_string="assignment_360454">
+  <div class="content" id="submit_assignment_tabs">
+    <ul>
+        <li><a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#submit_online_upload_form" class="submit_online_upload_option">File Upload</a></li>
+        <li><a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#submit_online_text_entry_form" class="submit_online_text_entry_option">Text Entry</a></li>
+        <li><a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#submit_from_external_tool_form_5527" class="external-tool" data-id="5527" data-name="CK-12">CK-12 Practice</a></li>
+        <li><a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#submit_from_external_tool_form_1417" class="external-tool" data-id="1417" data-name="Dropbox">Dropbox</a></li>
+        <li><a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#submit_from_external_tool_form_1457" class="external-tool" data-id="1457" data-name="Google Apps">Google Drive</a></li>
+        <li><a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#submit_from_external_tool_form_8981" class="external-tool" data-id="8981" data-name="JoVE LTI Tool">JoVE LTI Tool</a></li>
+        <li><a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#submit_from_external_tool_form_1499" class="external-tool" data-id="1499" data-name="Microsoft Office 365">Office 365</a></li>
+        <li><a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#submit_from_external_tool_form_8902" class="external-tool" data-id="8902" data-name="Niche Academy">Niche Academy</a></li>
+        <li><a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#submit_from_external_tool_form_266" class="external-tool" data-id="266" data-name="Studio">Studio</a></li>
+    </ul>
+      
+<form id="submit_online_upload_form" class="submit_assignment_form" enctype="multipart/form-data" action="https://westernwyoming.instructure.com/courses/16663/assignments/360454/submissions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓" autocomplete="off"><input type="hidden" name="authenticity_token" value="DGs9CaHzGncNTLC2ozJlu83XK0SMPFvPEDsRv7db8fBnCFw7zoNxMXQ+5dXaSxHPq79tF+sKYp1FUUHdwTXGyQ==" autocomplete="off">
+    <input value="online_upload" autocomplete="off" type="hidden" name="submission[submission_type]" id="submission_submission_type">
+    <input value="" id="submission_attachment_ids" autocomplete="off" type="hidden" name="submission[attachment_ids]">
+    <input id="eula_agreement_timestamp" autocomplete="off" type="hidden" name="submission[eula_agreement_timestamp]">
+    <table class="formtable" style="width: 100%;">
+      <tbody><tr>
+        <td colspan="2">
+          Upload a file, or choose a file you've already uploaded.
+          
+        </td>
+      </tr><tr>
+        <td colspan="2">
+          <span style="visibility: hidden"><label id="attachmentLabel" for="attachment_uploaded_data">File:</label></span>
+          <div class="submission_attachment" style="margin-bottom: 1em;">
+              <div class="attachment_wrapper" style="display: inline-block;"><button dir="ltr" cursor="pointer" type="button" tabindex="0" class="css-1gbaolv-view--inlineBlock-baseButton"><span class="css-1rpus1y-baseButton__content"><span class="css-qi8ml9-baseButton__childrenLayout"><span class="css-1b1ptk2-baseButton__iconWrapper"><span class="css-quqv7u-baseButton__iconSVG"><svg name="IconUpload" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="css-1uh2md0-inlineSVG-svgIcon" style="width: 1em; height: 1em;"><g role="presentation"><path d="m1838.86 1451.576 81.14 81.37-361.566 361.566H361.566L0 1532.946l81.255-81.37 327.891 328.007h1101.708l328.006-328.007ZM962.333 25l500.285 500.285-81.14 81.37-361.795-361.681v1187.559H904.869V244.973L543.188 606.655l-81.14-81.37L962.333 25Z" fill-rule="evenodd"></path></g></svg></span></span><span class="css-1s7boi7-baseButton__childrenWrapper"><span class="css-11xkk0o-baseButton__children">Upload File</span></span></span></span></button><button dir="ltr" cursor="pointer" type="button" tabindex="0" class="css-i5l8vt-view--inlineBlock-baseButton"><span class="css-1rpus1y-baseButton__content"><span class="css-qi8ml9-baseButton__childrenLayout"><span class="css-1b1ptk2-baseButton__iconWrapper"><span class="css-quqv7u-baseButton__iconSVG"><svg name="IconImage" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="css-1uh2md0-inlineSVG-svgIcon" style="width: 1em; height: 1em;"><g role="presentation"><path d="M1920 113v1694.118H0V113h1920Zm-112.941 112.941H112.94V1694.29h1694.12V225.941ZM935.944 1058.77c182.851-258.409 332.498-286.87 426.691-264.847 160.716 37.384 272.076 242.26 330.805 608.98l10.504 65.392H207.924l20.104-71.718c85.384-306.07 172.913-457.072 283.37-489.712 102.55-30.156 185.336 43.82 258.86 109.1 43.596 38.514 90.806 81.092 122.542 78.834 15.925-1.807 32.188-20.556 43.144-36.029Zm401.167-154.842c-83.012-19.313-196.066 60.762-308.895 220.01-35.237 49.807-76.348 77.816-122.315 83.124-76.226 9.024-138.182-42.827-198.812-96.266l-3.868-3.413c-2.578-2.276-5.154-4.552-7.73-6.824-54.211-48.113-110.682-97.017-152.018-85.384-34.447 10.165-102.325 69.12-185.788 340.179h1212.762c-50.485-265.186-134.4-428.386-233.336-451.426ZM677.647 338.882c124.574 0 225.882 101.309 225.882 225.883 0 124.574-101.308 225.882-225.882 225.882S451.765 689.34 451.765 564.765s101.308-225.883 225.882-225.883Zm0 112.942c-62.343 0-112.941 50.71-112.941 112.94 0 62.231 50.598 112.942 112.941 112.942 62.344 0 112.941-50.71 112.941-112.941 0-62.23-50.597-112.941-112.94-112.941Z" fill-rule="evenodd"></path></g></svg></span></span><span class="css-1s7boi7-baseButton__childrenWrapper"><span class="css-11xkk0o-baseButton__children">Use Webcam</span></span></span></span></button></div>
+            <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="remove_attachment_link no-hover" style="display: none;"><i class="icon-end" aria-hidden="true"></i><span class="screenreader-only">remove empty attachment</span></a>
+          </div><button class="Button Button--link add_another_file_link">
+            <i class="icon-add" aria-hidden="true"></i>
+            Add Another File
+          </button>
+          <div id="submission_attachment_blank" class="submission_attachment" style="display: none; margin-bottom: 1em;">
+              <div class="attachment_wrapper" style="display: inline-block;"></div>
+            <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="remove_attachment_link no-hover" style="display: none;"><i class="icon-end" aria-hidden="true"></i><span class="screenreader-only">remove empty attachment</span></a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td style="font-size: 0.8em;">
+          <button class="Button Button--link toggle_uploaded_files_link">Click here to find a file you've already uploaded</button><br>
+          <div id="uploaded_files" style="display: none;">
+        </div></td>
+      </tr>
+        <tr>
+          <td colspan="2">
+            <div class="textarea-emoji-container">
+              <div class="textarea-container">
+                <textarea class="submission_comment_textarea" placeholder="Comments..." title="Additional comments" name="submission[comment]" id="submission_comment"></textarea>
+                <span class="emoji-picker-container" style="display: none;"></span>
+              </div>
+              <div class="emoji-quick-picker-container" style="display: none;"></div>
+            </div>
+          </td>
+        </tr>
+        
+
+      
+
+      <tr>
+        <td colspan="2" class="button-container">
+          <button type="button" class="cancel_button btn">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="submit_file_button">Submit Assignment</button>
+          <span id="progress_indicator"></span>
+        </td>
+      </tr>
+    </tbody></table>
+</form>
+
+      
+<form id="submit_online_text_entry_form" class="submit_assignment_form" action="https://westernwyoming.instructure.com/courses/16663/assignments/360454/submissions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓" autocomplete="off"><input type="hidden" name="authenticity_token" value="euS0IdMDxcPvugYtSY7mQ8C5CbZAqF4COVOQduU+E9sRh9UTvHOuhZbIU04w95I3ptFP5SeeZ1BsOcAUk1Ak4g==" autocomplete="off">
+    <input value="online_text_entry" autocomplete="off" type="hidden" name="submission[submission_type]" id="submission_submission_type">
+    <input id="eula_agreement_timestamp" autocomplete="off" type="hidden" name="submission[eula_agreement_timestamp]">
+    <!-- fixed layout works because I know there is only 1 column (look at turnitin and vericite too)
+         it is necessary to keep the RCE from overflowing its container in mobile  -->
+
+    <table class="formtable" style="width: 100%;">
+      <tbody><tr>
+        <td>
+        Copy and paste or type your submission right here.
+            
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <textarea style="width: 100%; height: 250px;" name="submission[body]" id="submission_body"></textarea>
+        </td>
+      </tr>
+        <tr>
+          <td>
+            <div class="textarea-emoji-container">
+              <div class="textarea-container">
+                <textarea class="submission_comment_textarea" placeholder="Comments..." title="Additional comments" name="submission[comment]" id="submission_comment"></textarea>
+                <span class="emoji-picker-container" style="display: none;"></span>
+              </div>
+              <div class="emoji-quick-picker-container" style="display: none;"></div>
+            </div>
+          </td>
+        </tr>
+        
+
+      
+
+      <tr>
+        <td class="button-container">
+          <button type="button" class="cancel_button btn">Cancel</button>
+          <button type="submit" class="btn btn-primary">Submit Assignment</button>
+        </td>
+      </tr>
+    </tbody></table>
+</form>
+
+
+
+    <style>
+    #google_docs_tree li.folder {
+      cursor: pointer;
+    }
+    #google_docs_tree li.file {
+      cursor: pointer;
+      -moz-border-radius: 3px;
+      width: 80%;
+      padding-right: 20px;
+    }
+    #google_docs_tree li.file:hover {
+      background-color: #eee;
+    }
+    ul.instTree li span.active {
+      background: none;
+    }
+    #google_docs_tree li.file.leaf.active {
+      background-color: #ddd;
+    }
+    #google_docs_tree li.file .filename {
+      float: left;
+      max-width: 98%;
+    }
+    #google_docs_tree li.file .popout {
+      float: right;
+    }
+    </style>
+
+
+      <div id="submit_from_external_tool_form_5527" style="padding: 5px 5px 0 5px;"></div>
+      <div id="submit_from_external_tool_form_1417" style="padding: 5px 5px 0 5px;"></div>
+      <div id="submit_from_external_tool_form_1457" style="padding: 5px 5px 0 5px;"></div>
+      <div id="submit_from_external_tool_form_8981" style="padding: 5px 5px 0 5px;"></div>
+      <div id="submit_from_external_tool_form_1499" style="padding: 5px 5px 0 5px;"></div>
+      <div id="submit_from_external_tool_form_8902" style="padding: 5px 5px 0 5px;"></div>
+      <div id="submit_from_external_tool_form_266" style="padding: 5px 5px 0 5px;"></div>
+  </div>
+</div>
+
+
+
+
+
+  <div id="rubrics" class="mathjax_ignore" style="margin-bottom: 10px;">
+    <div style="display: none;" id="rubric_parameters">
+      <input type="hidden" name="rubric_association[association_type]" value="Assignment">
+      <input type="hidden" name="rubric_association[association_id]" value="360454">
+      <input type="hidden" name="rubric_association[purpose]" value="grading">
+    </div>
+    
+<div id="rubric_long_description_dialog" style="display: none;">
+  <div class="editing">
+    <form id="edit_criterion_form" class="no-margin-bottom">
+      <div>
+        <label class="rating_form_label">Description
+          <textarea class="description" rows="1" name="description"></textarea>
+        </label>
+      </div>
+      <div>
+        <label class="rating_form_label">Long Description
+          <textarea class="long_description" rows="4" name="long_description"></textarea>
+        </label>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+        <button type="button" class="btn save_button btn-primary">Update Criterion</button>
+      </div>
+    </form>
+  </div>
+  <div class="displaying">
+    <div class="long_description">
+    </div>
+  </div>
+</div>
+<div id="rubric_criterion_comments_dialog" style="display: none;">
+  <div class="criterion_description" style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;" tabindex="-1"></div>
+  <div class="editing">
+    <label for="criterion_comments_textarea">
+      Additional Comments:
+    </label>
+    <textarea id="criterion_comments_textarea" class="criterion_comments" name="criterion_comments" style="width: 370px;"></textarea>
+    <div class="button-container">
+      <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+      <button type="button" class="btn save_button">Update Comments</button>
+    </div>
+  </div>
+  <div class="displaying">
+    Additional Comments:
+    <div class="criterion_comments" style="margin-top: 10px;">
+    </div>
+  </div>
+</div>
+<div id="rubric_rating_dialog" style="display: none;">
+  <div class="description" style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;">
+    <span id="edit_rating_form_criterion_description"></span>
+  </div>
+  <div class="editing">
+    <form id="edit_rating_form" class="no-margin-bottom">
+      <div class="toggle_for_hide_points">
+        <div><label id="rating_form_score_label" class="rating_form_label">Rating Score</label></div>
+        <span id="rating_form_max_score_label" hidden="">Rating max score</span>
+        <input id="points" aria-labelledby="rating_form_score_label" type="text" size="2" name="points" class="no-margin-bottom span1">
+        <span class="range_rating">to &gt;
+          <input aria-label="Rating min score" type="text" size="2" name="min_points" class="no-margin-bottom span1 min_points" placeholder="min">
+        </span>pts
+      </div>
+      <div>
+        <label for="rating_form_title" class="rating_form_label">Rating Title</label>
+        <input id="rating_form_title" type="text" class="rating_description" style="width: 90%;" name="description">
+      </div>
+      <div>
+        <label for="rating_form_description" class="rating_form_label">Rating Description</label>
+        <textarea id="rating_form_description" rows="4" style="width: 90%;" class="rating_long_description" name="rating_long_description" form="edit_rating_form"></textarea>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn button-secondary cancel_button">Cancel</button>
+        <button type="button" class="btn btn-primary save_button ok_button">Update Rating</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  </div>
+  
+<div class="rubric_container rubric  " id="default_rubric" style="display: none;">
+  <div class="screenreader-only"><h2>Rubric</h2></div>
+  <div class="rubric_title">
+    <div style="display: none;" class="links displaying pull-right">
+      <a href="https://westernwyoming.instructure.com/courses/16663/rubrics/%7B%7B%20id%20%7D%7D" class=" edit_rubric_link no-print no-hover" style="" title="Edit Rubric" aria-label="Edit Rubric" role="button"><i class="icon-edit standalone-icon"></i></a>
+      <a href="https://westernwyoming.instructure.com/search/rubrics?q=" class="find_rubric_link no-print no-hover" style="" title="Find Another Rubric" aria-label="Find Another Rubric" role="button"><i class="icon-search standalone-icon"></i></a>
+        <a href="https://westernwyoming.instructure.com/courses/16663/rubric_associations/%7B%7B%20rubric_association_id%20%7D%7D" class="delete_rubric_link no-print no-hover" style="" title="Delete Rubric" aria-label="Delete Rubric" role="button"><i class="icon-trash standalone-icon"></i></a>
+      <div style="display: none;">
+        <div class="use_for_grading">&nbsp;</div>
+        <div class="free_form_criterion_comments">&nbsp;</div>
+        <div class="hide_score_total">&nbsp;</div>
+        <div class="hide_outcome_results">&nbsp;</div>
+        <div class="hide_points">&nbsp;</div>
+        <div class="rubric_association_id">&nbsp;</div>
+          <div class="user_id">&nbsp;</div>
+        <div class="assessment_type"></div>
+        <a href="https://westernwyoming.instructure.com/courses/16663/rubric_associations/%7B%7B%20rubric_association_id%20%7D%7D/assessments/%7B%7B%20assessment_id%20%7D%7D" rel="nofollow" class="edit_assessment_link">&nbsp;</a>
+        <a href="https://westernwyoming.instructure.com/courses/16663/rubrics/%7B%7B%20rubric_id%20%7D%7D" class="edit_rubric_url">&nbsp;</a>
+          <a href="https://westernwyoming.instructure.com/courses/16663/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url">&nbsp;</a>
+      </div>
+    </div>
+    <div style="float: right; font-size: 0.8em; display: none;" class="links displaying locked">
+      <span style="">Can't change a rubric once you've started using it.</span>
+        <a href="https://westernwyoming.instructure.com/courses/16663/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url" style="display: none;">&nbsp;</a>
+    </div>
+
+    <div class="editing" style="float: right;">
+      <a href="https://westernwyoming.instructure.com/search/rubrics?q=" class="find_rubric_link icon-search" style="" title="Find Existing Rubric">Find a Rubric</a>
+    </div>
+    <div class="editing" style="text-align: left">
+      <label for="rubric-title">Title:</label>
+      <input id="rubric-title" type="text" class="no-margin-bottom" name="title" value="Some Rubric" style="width: 200px;" maxlength="255" aria-label="Title:">
+      <a href="https://westernwyoming.instructure.com/search/rubrics?q=" style="display: none;"><img alt="" src="https://du11hjcvx0uqb.cloudfront.net/dist/images/find-6164443e2a.png"> Find Rubric</a>
+    </div>
+    <div class="displaying">
+      <span class="title" tabindex="-1">Title</span>
+    </div>
+    <div class="has-assessments-warning" style="display: none;">
+      You've already rated students with this rubric. Any major changes could affect their assessment results.
+    </div>
+  </div>
+<table class="rubric_table">
+<caption>
+  <div class="screenreader-only">
+    <span class="title">Title</span>
+  </div>
+</caption>
+<thead>
+  <tr>
+    <th scope="col">Criteria</th>
+    <th scope="col">Ratings</th>
+    <th scope="col" class="toggle_for_hide_points ">
+      Pts
+    </th>
+  </tr>
+</thead>
+<tbody>
+  
+<tr id="criterion_blank" class="criterion blank" style="display: none;">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="edit_criterion_link" role="button"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+          <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="delete_criterion_link" role="button"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a Learning Outcome</span>
+        </span>
+        <span class="description description_title">Description of criterion</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;"></span>
+          <div class="long_description small_description"></div>
+        <div class="hide_when_learning_outcome ">
+          <div class="criterion_use_range_div editing toggle_for_hide_points ">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range"></label>
+          </div>
+        </div>
+        <div class="threshold toggle_for_hide_points ">
+          threshold:
+          <span class="mastery_points">5</span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tbody><tr>
+          <td class="rating edge_rating
+                
+                ">
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="edit_rating_link" role="button"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">5</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> pts
+                </span>
+                <div class="description rating_description_value">Full Marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="add_rating_link_after" aria-label="Add rating" role="button"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td class="rating edge_rating
+                infinitesimal
+                ">
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="edit_rating_link" role="button"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">0</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> pts
+                </span>
+                <div class="description rating_description_value">No Marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank_2</span>
+              </div>
+            </div>
+          </td>
+      </tr></tbody></table>
+      <div style="display: none; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form toggle_for_hide_points ">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input type="text" aria-label="Points" value="5" class="criterion_points span1 no-margin-bottom">
+           pts
+      </span><br>
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">5</span> pts<br>
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="no-hover criterion_comments_link" title="Additional Comments">
+          <img alt="Additional Comments" src="https://du11hjcvx0uqb.cloudfront.net/dist/images/rubric_comment-ddae8546ab.png">
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr>
+
+  <tr id="criterion_1" class="criterion" style="">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="edit_criterion_link" role="button"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+          <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="delete_criterion_link" role="button"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a Learning Outcome</span>
+        </span>
+        <span class="description description_title">Description of criterion</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;"></span>
+          <div class="long_description small_description"></div>
+        <div class="hide_when_learning_outcome ">
+          <div class="criterion_use_range_div editing toggle_for_hide_points ">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range"></label>
+          </div>
+        </div>
+        <div class="threshold toggle_for_hide_points ">
+          threshold:
+          <span class="mastery_points">5</span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tbody><tr>
+          <td class="rating edge_rating
+                
+                ">
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="edit_rating_link" role="button"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">5</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> pts
+                </span>
+                <div class="description rating_description_value">Full Marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="add_rating_link_after" aria-label="Add rating" role="button"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td class="rating edge_rating
+                infinitesimal
+                ">
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="edit_rating_link" role="button"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">0</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> pts
+                </span>
+                <div class="description rating_description_value">No Marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank_2</span>
+              </div>
+            </div>
+          </td>
+      </tr></tbody></table>
+      <div style="display: none; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form toggle_for_hide_points ">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input type="text" aria-label="Points" value="5" class="criterion_points span1 no-margin-bottom">
+           pts
+      </span><br>
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">5</span> pts<br>
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="https://westernwyoming.instructure.com/courses/16663/assignments/360454#" class="no-hover criterion_comments_link" title="Additional Comments">
+          <img alt="Additional Comments" src="https://du11hjcvx0uqb.cloudfront.net/dist/images/rubric_comment-ddae8546ab.png">
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr><tr class="summary">
+    <td colspan="4">
+      <div class="total_points_holder toggle_for_hide_points " style="float: right; ">
+        <span>Total Points:
+            <span class="rubric_total">
+              5
+            </span>
+ <span class="assessing">out of 5</span>        </span>
+      </div>
+      <div class="editing pull-left">
+        <span id="add_criterion_holder" class="criterion_link"></span>
+      </div>
+      <div class="clear"></div>
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<table style="display: none;">
+  <tbody><tr id="edit_rubric">
+    <td colspan="4">
+      <form id="edit_rubric_form" class="edit-rubric-form no-margin-bottom">
+        <div class="rubric_custom_ratings" style="">
+          <input type="checkbox" id="rubric_custom_rating" class="rubric_custom_rating">
+          <label for="rubric_custom_rating">I'll write free-form comments when assessing students</label>
+        </div>
+          <div class="hide_points" style="">
+            <input type="checkbox" id="hide_points" class="hide_points_checkbox">
+            <label for="hide_points">Remove points from rubric</label>
+          </div>
+          <div class="hide_outcome_results" style="">
+            <input type="checkbox" id="hide_outcome_results" class="hide_outcome_results_checkbox">
+            <label for="hide_outcome_results">Don't post Outcomes results to Learning Mastery Gradebook</label>
+          </div>
+          <div class="rubric_grading" style="">
+            <input type="checkbox" id="grading_rubric" class="grading_rubric_checkbox">
+            <label for="grading_rubric">Use this rubric for assignment grading</label>
+          </div>
+        <div class="totalling_rubric" style="">
+          <input type="checkbox" id="totalling_rubric" class="totalling_rubric_checkbox">
+          <label for="totalling_rubric">Hide score total for assessment results</label>
+        </div>
+        <div class="ic-Action-header ic-Action-header--half-margin">
+          <div class="ic-Action-header__Primary">
+            <button type="button" class="Button cancel_button">Cancel</button>
+            <button type="submit" class="Button Button--primary save_button">Create Rubric</button>
+          </div>
+        </div>
+      </form>
+    </td>
+  </tr>
+</tbody></table>
+
+
+  <div id="assignment_external_tools"><div></div></div>
+
+  
+  <div id="sequence_footer" data-course-id="16663" data-asset-id="360454" data-asset-type="Assignment"><div class="module-sequence-padding"></div>
+<div class="module-sequence-footer" role="navigation" aria-label="Module Navigation">
+  <div class="module-sequence-footer-content">
+    
+      <span class="module-sequence-footer-button--previous" data-tooltip="right" data-html-tooltip-title="&lt;i class=&#39;icon-assignment&#39;&gt;&lt;/i&gt; Visual Studio Code Download, Installation, and Configuration">
+          <a href="https://westernwyoming.instructure.com/courses/16663/modules/items/918425" class="Button" aria-describedby="msf0-previous-desc" aria-label="Previous Module Item">
+            <i class="icon-mini-arrow-left"></i>Previous
+            <span id="msf0-previous-desc" class="hidden" hidden="">Previous: Visual Studio Code Download, Installation, and Configuration</span>
+          </a>
+      </span>
+    
+
+    
+      <span class="module-sequence-footer-button--next" data-tooltip="left" data-html-tooltip-title="&lt;strong style=&#39;float:left&#39;&gt;Next Module:&lt;/strong&gt; &lt;br&gt; Module 3: Input, Processing, and Output">
+        <a href="https://westernwyoming.instructure.com/courses/16663/modules/items/912243" class="Button" aria-describedby="msf0-next-desc" aria-label="Next Module Item">
+          Next<i class="icon-mini-arrow-right"></i>
+          <span id="msf0-next-desc" class="hidden" hidden="">Next Module: Module 3: Input, Processing, and Output</span>
+        </a>
+      </span>
+    
+  </div>
+</div>
+</div>
+
+
+
+          </div>
+        </div>
+        <div id="right-side-wrapper" class="ic-app-main-content__secondary">
+          <aside id="right-side" role="complementary">
+            
+<div id="sidebar_content">
+
+
+</div>
+
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+        <div id="page_view_id">69738d2d-ff69-4782-aa1c-c417fdbe7c21</div>
+    </div>
+  <div id="aria_alerts" class="hide-text affix" role="alert" aria-live="assertive"></div>
+  <div id="StudentTray__Container"></div>
+    <div class="NewUserTutorialTray__Container"></div>
+  <div id="react-router-portals"></div>
+  
+
+  <iframe src="./Your First Python Program_files/post_message_forwarding.html" name="post_message_forwarding" title="post_message_forwarding" id="post_message_forwarding" sandbox="allow-scripts allow-same-origin" style="display:none;"></iframe>
+
+
+  <script>
+    Object.assign(
+      ENV,
+      {}
+    )
+  </script>
+
+<script>
+//<![CDATA[
+(window.bundles || (window.bundles = [])).push('inst_fs_service_worker');
+//]]>
+</script>
+  <script src="https://instructure-uploads.s3.amazonaws.com/account_116920000000000001/attachments/2435046/AfterEK.js" defer="defer"></script>
+
+</div> <!-- #application -->
+
+
+<div id="ek-overlay" style="display: none;"></div><div id="ek-modal" role="dialog" tabindex="-1" aria-live="assertive" aria-labelledby="ek-modal-header" style="display: none;"><div class="ek-modal-content"><h2 class="ek-modal-header" id="ek-modal-header"></h2><a id="ek-modal-close"></a><div class="ek-modal-body" id="ek-modal-body"></div><div class="ek-modal-footer"></div></div></div><div id="nav-tray-portal" style="position: relative; z-index: 99;"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ally-helper-hidden-accessible"></div><div class="tinymce-a11y-checker-container"></div></body></html>
