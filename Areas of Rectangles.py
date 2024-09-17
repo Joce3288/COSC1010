@@ -5,6 +5,12 @@
 # COSC 2409 DNT
 #
 # Local variables
+# lengthA is the length of the first rectangle
+# widthA is the width of the first rectangle
+# lengthB is the length of the second rectangle
+# widthB is the width of the second rectangle
+# areaA is the multiplied product of lengthA and widthA for the first rectangle
+# areaB is the multiplied product of lengthB and widthB for the second rectangle
 
 # Get length A
 lengthA=float(input('What is the length of first rectangle? '))
