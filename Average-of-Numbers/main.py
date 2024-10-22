@@ -7,29 +7,28 @@
 # Use comments liberally throughout the program. 
 
 def main():
-    # constants
-    infile=''
-    
-    # Variables
-    fileNumbers=float
-    totalAmountAdded=float(0.0)
-    runningTotal=float(0.0)
-    averagedNumbers=float
+    # Declare variables
+    total=0.0
+    number=0.0
+    counter=0
 
-    # Open the file 
+    # Open file numbers.txt to read
     infile=open('numbers.txt' , 'r')
 
-    # Read its contents
-    fileNumbers=infile.read()
     for line in infile:
-        number= float(line)
-        totalAmountAdded=totalAmountAdded+line
-        runningTotal=runningTotal+1
+        counter=counter+1
+        number=float(line)
+        print(number)
+        total+=number
     
-    # Divide for the average
-    averagedNumbers=totalAmountAdded%runningTotal
+    # Close the file
+    infile.close()
 
-    print('The average is: ' , averagedNumbers)
-        
+    # Calculate the average
+    average=total/counter
 
+    # Display the average of the numbers in the file
+    print('The average is: ' , average)
+
+# Call main()
 main()
