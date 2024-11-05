@@ -1,35 +1,37 @@
 #
 # Jocelyn Wilson
-# 10/14/24
-# Average of Numbers Programming Project
+# 10/29/24
+# Magic 8 Ball Programming Project
 # COSC 2409 DNT
 #
 # Use comments liberally throughout the program. 
 
+# Import random module
+import random
+
+#  Define main function
 def main():
-    # constants
-    infile=''
-    
-    # Variables
-    fileNumbers=float
-    totalAmountAdded=float(0.0)
-    runningTotal=float(0.0)
-    averagedNumbers=float
+    question='' # Is there a question to answer
+    answer='' # Answer to the question asked picked at random
+    responses=[] # list of all the responses from the file 
 
-    # Open the file 
-    infile=open('numbers.txt' , 'r')
+    # Open file of responses
+    responses=list(open('8_ball_responses.txt' , 'r'))
 
-    # Read its contents
-    fileNumbers=infile.read()
-    for line in infile:
-        number= float(line)
-        totalAmountAdded=totalAmountAdded+line
-        runningTotal=runningTotal+1
-    
-    # Divide for the average
-    averagedNumbers=totalAmountAdded%runningTotal
+    # Initialize loop with the first question
+    question=input('Do you have a question? ')
 
-    print('The average is: ' , averagedNumbers)
+    # While loop to ask questions until they don't have anymore
+    while question == 'y' or 'yes':
         
+        # Ask them their first question
+        input('What is your question? ')
+        
+        # Display answer to question
+        print(random.choice(responses))
+        
+        # Ask if they have another question to either restart  or end the loop
+        question= input('Do you have another question? ')
 
+# Call the main function
 main()
