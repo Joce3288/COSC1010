@@ -29,7 +29,7 @@ def main():
                 'North Carolina':'Raleigh', 'North Dakota':'Bismarck',
                 'Ohio':'Columbus', 'Oklahoma':'Oklahoma City',
                 'Oregon':'Salem', 'Pennsylvania':'Harrisburg',
-                'Rhode Island':'Providence', 'South       Carolina':'Columbia',
+                'Rhode Island':'Providence', 'South Carolina':'Columbia',
                 'South Dakota':'Pierre', 'Tennessee':'Nashville',
                 'Texas':'Austin', 'Utah':'Salt Lake City',
                 'Vermont':'Montpelier', 'Virginia':'Richmond',
@@ -37,8 +37,34 @@ def main():
                 'Wisconsin':'Madison', 'Wyoming':'Cheyenne'}
 
     # Local variables
+    
+    quizMe='y' # If the user wants another question
+    userAnswer='' # The answer the user gives 
+    correctAnswerCount=0 # How many answers the user has got right
+    wrongAnswerCount=0 # How many answers the user has got wrong
 
-    # Continue until user quits the game.
+    # Initialize while loop for each question
+    while quizMe=='y':
+        # Pick a random state
+        state, capital= capitals.popitem()
+        # Ask question
+        print('What is the capital of ' , state , '? ')
+        userAnswer=input()
+
+        # If the answer is right then add one to correct answers else add one to the wrong answers
+        if userAnswer==capital:
+            correctAnswerCount+=1
+        else:
+            wrongAnswerCount+=1
+        
+        # Display the answer counts
+        print('You have answered ', correctAnswerCount , 'right')
+
+        print('You have answered ', wrongAnswerCount , 'wrong')
+
+
+        # Ask if the user still wants to play the game
+        quizMe=input('Do you want another question? ')
 
 # Call the main function.
 main()
